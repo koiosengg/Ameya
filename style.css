@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Home */
+
+.home-banner {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-banner-background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-banner-background::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 73.56%, #000 103.5%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%)
+      no-repeat;
+  z-index: 1;
+}
+
+.home-banner-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-banner-background img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.home-banner-background img.active {
+  opacity: 1;
+}
+
+.home-banner-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 730px;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  z-index: 2;
+}
+
+.home-banner-container-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.home-banner-container-top img {
+  height: 120px;
+  object-fit: cover;
+}
+
+.home-banner-container-top section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+}
+
+.home-banner-container-top h1 {
+  color: var(--White, #fff);
+  font-family: Manrope;
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -3.36px;
+}
+
+.home-banner-container-top p {
+  color: var(--Grey-grey-50, #f2f2f2);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.home-banner-container-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.primary-btn {
+  display: inline-flex;
+  height: 56px;
+  padding: 8px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: var(--Brown-brown-700, #6b3606);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.primary-btn:hover {
+  background: var(--Brown-brown-900, #3f2003);
+}
+
+.primary-btn p {
+  color: var(--White, #fff);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.secondary-btn {
+  display: flex;
+  height: 56px;
+  padding: 8px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border: 1px solid var(--Brown-brown-100, #dfc8b2);
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.secondary-btn:hover {
+  background: var(--Brown-brown-100, #dfc8b2);
+}
+
+.secondary-btn svg {
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1/1;
+}
+
+.secondary-btn svg path {
+  transition: all 0.3s;
+}
+
+.secondary-btn:hover svg path {
+  fill: #974c08;
+}
+
+.secondary-btn p {
+  color: var(--White, #fff);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  transition: all 0.3s;
+}
+
+.secondary-btn:hover p {
+  color: var(--Brown-Primary, #974c08);
+}
+
+.home-banner-contact {
+  position: absolute;
+  bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 2;
+}
+
+.home-banner-contact a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.home-banner-contact a svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+
+.home-banner-contact a:hover svg path {
+  fill: #dfc8b2;
+}
+
+.home-banner-contact a p {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.home-banner-contact a:hover p {
+  color: #dfc8b2;
+}
