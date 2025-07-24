@@ -5,7 +5,7 @@ import Logo from "../assets/Home/Logo.png";
 
 const images = [DesktopBackground1, DesktopBackground2];
 
-function Home() {
+function Home({ setContact }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -41,7 +41,7 @@ function Home() {
           </section>
         </div>
         <div className="home-banner-container-bottom">
-          <a href="#" className="primary-btn">
+          <a onClick={setContact} className="primary-btn">
             <p>Contact Us</p>
           </a>
           <a href="#" className="secondary-btn">
