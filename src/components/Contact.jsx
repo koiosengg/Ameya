@@ -35,17 +35,37 @@ function Contact({ activeContact, setContact }) {
         <div className="contact-content">
           <h2 className="desktop">Contact Us</h2>
           <div className="contact-div">
-            <form>
+            <form action="https://formspree.io/f/mdkdgeja" method="POST">
               <div className="input-container">
-                <input type="text" placeholder="Full name" />
-                <input type="text" placeholder="Email id" />
-                <input type="text" placeholder="Phone number" />
-                <textarea type="text" placeholder="Message" />
+                <input
+                  type="text"
+                  name="Full Name"
+                  placeholder="Full name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Email id"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="Phone Number"
+                  placeholder="Phone number"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  placeholder="Message"
+                  required
+                ></textarea>
               </div>
-              <button className="primary-btn">
+              <button type="submit" className="primary-btn">
                 <p>Submit</p>
               </button>
             </form>
+
             <div className="contact-line mobile"></div>
             <div className="contact-info">
               <a href="#">

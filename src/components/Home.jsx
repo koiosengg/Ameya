@@ -44,7 +44,11 @@ function Home({ setContact }) {
           <a onClick={setContact} className="primary-btn">
             <p>Contact Us</p>
           </a>
-          <a href="#" className="secondary-btn">
+          <a
+            href="https://wa.me/919538507768"
+            target="_blank"
+            className="secondary-btn"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
