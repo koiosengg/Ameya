@@ -21,6 +21,7 @@ header {
   background: #fff;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
 
 .navbar-logo img {
@@ -129,6 +130,447 @@ header nav a:hover {
 }
 
 /* Home */
+
+.home-hero {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-hero-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-hero-container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  z-index: 1;
+}
+
+.home-hero-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: all 0.5s;
+}
+
+.home-hero-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.home-hero-center {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% + 40px));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0px 48px;
+  z-index: 2;
+}
+
+.home-hero-control {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  aspect-ratio: 1/1;
+  border-radius: 100px;
+  background: rgba(125, 125, 125, 0.4);
+  backdrop-filter: blur(20px);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.home-hero-control svg path {
+  transition: all 0.3s;
+}
+
+.home-hero-control:hover {
+  background: var(--White, #fff);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.25);
+}
+
+.home-hero-control:hover svg path {
+  fill: #121212;
+}
+
+.home-hero-center section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-hero-center h1 {
+  color: var(--White, #fff);
+  font-family: Manrope;
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -3.36px;
+}
+
+.home-hero-center p {
+  color: var(--White, #fff);
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+
+.home-hero-bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 48px;
+  z-index: 2;
+}
+
+.home-hero-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.home-hero-indicator-bar {
+  width: 32px;
+  height: 8px;
+  border-radius: 100px;
+  background: rgba(109, 109, 109, 0.5);
+  transition: all 0.5s;
+}
+
+.home-hero-indicator-active-bar {
+  width: 56px;
+  height: 8px;
+  border-radius: 100px;
+  background: var(--White, #fff);
+}
+
+.home-hero-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.home-hero-button {
+  width: 219px;
+  height: 56px;
+  flex-shrink: 0;
+  position: relative;
+  text-decoration: none;
+}
+
+.home-hero-button-background path {
+  transition: all 0.3s;
+}
+
+.home-hero-button:hover .home-hero-button-background path {
+  fill: #dfc8b2;
+  stroke: #974c08;
+}
+
+.home-hero-button-container {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.home-hero-button-container p {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  transition: all 0.3s;
+}
+
+.home-hero-button-container svg path {
+  transition: all 0.3s;
+}
+
+.home-hero-button:hover .home-hero-button-container p {
+  color: var(--Brown-Primary, #974c08);
+}
+
+.home-hero-button:hover .home-hero-button-container svg path {
+  fill: #974c08;
+}
+
+.home-hero-button:first-child:hover .home-hero-button-background path {
+  stroke: #dfc8b2;
+  fill: #974c08;
+}
+
+.home-hero-button:first-child .home-hero-button-container p {
+  color: var(--Brown-Primary, #974c08);
+}
+
+.home-hero-button:first-child:hover .home-hero-button-container p {
+  color: #fff;
+}
+
+.home-hero-button:first-child:hover .home-hero-button-container svg path {
+  fill: #fff;
+}
+
+.home-hero-mandala {
+  width: 246px;
+  height: 246px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: -124px;
+  animation: rotate360 20s linear infinite;
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-numbers {
+  width: 100%;
+  display: flex;
+  padding: 40px 160px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--Yellow-yellow-100, #f8efc2);
+  position: relative;
+  z-index: 3;
+}
+
+.home-numbers p {
+  color: var(--Yellow-yellow-800, #806f20);
+  font-family: Manrope;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -1.44px;
+}
+
+.home-banner {
+  width: 100%;
+  display: flex;
+  padding: 64px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.home-banner-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-banner-container img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+}
+
+.home-banner-text {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  background: var(--White, #fff);
+}
+
+.home-banner-text section {
+  width: 432px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.home-banner-text h2 {
+  color: var(--Text-Black-text-black-200, #929292);
+  font-family: Manrope;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -1.92px;
+}
+
+.home-banner-text h2 span {
+  color: var(--Text-Black-Primary, #121212);
+}
+
+.home-banner-text section p {
+  width: 100%;
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.section-template {
+  width: 100%;
+  display: flex;
+  padding: 64px 160px;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.section-template-heading {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-template-heading h2 {
+  text-align: center;
+  font-family: Manrope;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -2.08px;
+  background: linear-gradient(90deg, #974c08 0%, #311902 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-template-heading p {
+  color: var(--Text-Black-text-black-300, #606060);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.home-amenities {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.home-amenities-set {
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.home-amenities-set svg {
+  width: 48px;
+  height: 48px;
+  aspect-ratio: 1/1;
+}
+
+.home-amenities-set section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+}
+
+.home-amenities-set h3 {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+
+.home-amenities-set-line {
+  width: 100%;
+  height: 2px;
+  background: #ececec;
+}
+
+.home-amenities-set p {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
 
 /* Footer */
 

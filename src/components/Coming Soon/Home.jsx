@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import DesktopBackground1 from "../../assets/Home/Desktop Background 1.jpg";
-import DesktopBackground2 from "../../assets/Home/Desktop Background 2.jpg";
-import Logo from "../../assets/Home/Logo.png";
+import DesktopBackground1 from "../../assets/Coming Soon/Desktop Background 1.jpg";
+import DesktopBackground2 from "../../assets/Coming Soon/Desktop Background 2.jpg";
+import Logo from "../../assets/Coming Soon/Logo.png";
 
 const images = [DesktopBackground1, DesktopBackground2];
 

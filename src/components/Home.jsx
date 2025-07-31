@@ -1,17 +1,17 @@
 import React from "react";
+import Numbers from "./Home/Numbers";
+import Hero from "./Home/Hero";
+import Banner from "./Home/Banner";
+import Amenities from "./Home/Amenities";
 
 function Home() {
   return (
-    <div
-      style={{
-        height: "100svh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      Home
-    </div>
+    <>
+      <Hero />
+      <Numbers />
+      <Banner />
+      <Amenities />
+    </>
   );
 }
 
