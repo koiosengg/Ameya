@@ -63,7 +63,7 @@ function Gallery() {
             </section>
           </div>
         </div>
-        <Link className="secondary-btn">
+        <Link to="/" className="secondary-btn">
           <p>View More</p>
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
+import Background from "../assets/Testimony/Background.svg";
 import AnandMahajan from "../assets/Testimony/Anand Mahajan.png";
 import KritiPrakash from "../assets/Testimony/Kriti Prakash.png";
 import Star from "../assets/Testimony/Star.svg";
+
 function Testimony() {
   const containerRef = useRef(null);
   const slideRef = useRef(null);
@@ -50,6 +52,7 @@ function Testimony() {
       </div>
 
       <div className="testimony">
+        <img src={Background} className="testimony-background" />
         <div
           className="testimony-controls"
           onClick={handleLeftClick}
@@ -89,7 +92,6 @@ function Testimony() {
             </g>
           </svg>
         </div>
-
         <div className="testimony-container" ref={containerRef}>
           <div
             className="testimony-slide"
@@ -245,7 +247,6 @@ function Testimony() {
             </div>
           </div>
         </div>
-
         <div
           className="testimony-controls"
           onClick={handleRightClick}

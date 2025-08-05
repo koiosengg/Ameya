@@ -5,7 +5,13 @@ import Banner from "./Home/Banner";
 import Amenities from "./Home/Amenities";
 import Rooms from "./Home/Rooms";
 import Testimony from "./Testimony";
-import Gallery from "./Home/Gallery";
+import HomeGallery from "./Home/Gallery";
+import Reach from "./Reach";
+import CoorgGallery from "./Coorg/Gallery";
+import Cafe from "./Home/Cafe";
+import Relax from "./Relax";
+import Blog from "./Home/Blog";
+import FAQ from "./FAQ";
 
 function Home() {
   return (
@@ -15,8 +21,14 @@ function Home() {
       <Banner />
       <Rooms />
       <Amenities />
-      <Gallery/>
+      <HomeGallery />
       <Testimony />
+      <Reach />
+      <CoorgGallery />
+      <Cafe />
+      <Relax />
+      <Blog />
+      <FAQ />
     </>
   );
 }
