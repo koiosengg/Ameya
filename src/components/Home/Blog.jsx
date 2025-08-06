@@ -39,7 +39,10 @@ function Blog() {
   return (
     <div className="section-template">
       <div className="section-template-heading">
-        <h2>A Cafe with Comfort Perks</h2>
+        <h2>
+          Stories, tips, and experiences to <br />
+          inspire your next stay.
+        </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
           <br className="desktop" />

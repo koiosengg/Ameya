@@ -12,7 +12,7 @@ function Navbar() {
         <Link>Coorg</Link>
         <Link>Accomodations</Link>
         <Link>Gallery</Link>
-        <Link>Contact</Link>
+        <Link to="/contact">Contact</Link>
       </nav>
     </header>
   );
