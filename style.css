@@ -678,7 +678,6 @@ header nav a:hover {
   font-size: 52px;
   font-style: normal;
   font-weight: 600;
-  line-height: 110%;
   letter-spacing: -2.08px;
   background: linear-gradient(90deg, #974c08 0%, #311902 100%);
   background-clip: text;
@@ -1684,24 +1683,133 @@ header nav a:hover {
   gap: 4px;
 }
 
-.coorg-trek-set-info-description h4{
-color: var(--Text-Black-Primary, #121212);
-font-family: Manrope;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-letter-spacing: -0.36px;
+.coorg-trek-set-info-description h4 {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
 }
 
-.coorg-trek-set-info-description p{
-color: var(--Text-Black-text-black-300, #606060);
-font-family: Manrope;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: -0.28px;
+.coorg-trek-set-info-description p {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.coorg-attractions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.coorg-attractions-set {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 48px;
+  align-self: stretch;
+}
+
+.coorg-attractions-set:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.coorg-attractions-set-img {
+  width: 100%;
+  height: 434px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.coorg-attractions-set-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.coorg-attractions-set-img img:hover {
+  scale: 1.1;
+}
+
+.coorg-attractions-set-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.coorg-attractions-set-info-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.coorg-attractions-set-info-distance {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.coorg-attractions-set-info-distance svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+
+.coorg-attractions-set-info-distance p {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.coorg-attractions-set-info-description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.coorg-attractions-set-info-description h3 {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.coorg-attractions-set-info-description p {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
 }
 
 .coorg-gallery {
@@ -1726,10 +1834,6 @@ letter-spacing: -0.28px;
 .coorg-gallery .gallery-set {
   height: auto;
 }
-
-/* .coorg-gallery .gallery-set:hover img {
-  scale: 1.1;
-} */
 
 /* Footer */
 
