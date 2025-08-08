@@ -9,7 +9,7 @@ function Navbar() {
         <img src={Logo} alt="Ameya Coorg Homestay Logo" />
       </Link>
       <nav>
-        <Link>Coorg</Link>
+        <Link to="/coorg">Coorg</Link>
         <Link>Accomodations</Link>
         <Link>Gallery</Link>
         <Link to="/contact">Contact</Link>
