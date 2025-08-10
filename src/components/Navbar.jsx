@@ -1,18 +1,49 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../assets/Navbar/Logo.png";
 
 function Navbar() {
   return (
     <header>
-      <Link to="/" className="navbar-logo">
+      <NavLink to="/" className="navbar-logo">
         <img src={Logo} alt="Ameya Coorg Homestay Logo" />
-      </Link>
+      </NavLink>
       <nav>
-        <Link to="/coorg">Coorg</Link>
-        <Link>Accomodations</Link>
-        <Link>Gallery</Link>
-        <Link to="/contact">Contact</Link>
+        <NavLink
+          to="/accomodations"
+          className={({ isActive }) =>
+            isActive ? "active-navbar-link" : undefined
+          }
+        >
+          Accomodations
+        </NavLink>
+
+        <NavLink
+          to="/coorg"
+          className={({ isActive }) =>
+            isActive ? "active-navbar-link" : undefined
+          }
+        >
+          Coorg
+        </NavLink>
+
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            isActive ? "active-navbar-link" : undefined
+          }
+        >
+          Gallery
+        </NavLink>
+
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "active-navbar-link" : undefined
+          }
+        >
+          Contact
+        </NavLink>
       </nav>
     </header>
   );

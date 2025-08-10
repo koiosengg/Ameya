@@ -56,6 +56,14 @@ header nav a:hover {
   color: var(--Text-Black-Primary, #121212);
 }
 
+header nav .active-navbar-link {
+  color: var(--Brown-Primary, #974c08);
+}
+
+header nav .active-navbar-link:hover {
+  color: var(--Brown-Primary, #974c08);
+}
+
 /* Buttons */
 
 .primary-btn {
@@ -1342,145 +1350,6 @@ header nav a:hover {
   letter-spacing: -0.32px;
 }
 
-/* Contact */
-
-.contact-form-container {
-  width: 100%;
-  display: flex;
-  gap: 24px;
-}
-
-.contact-form {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 32px;
-  flex-shrink: 0;
-}
-
-.contact-form-inputs {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-}
-
-.contact-form-inputs section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-}
-
-.contact-form-inputs label {
-  color: var(--Text-Black-text-black-300, #606060);
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.32px;
-}
-
-.contact-form-inputs input {
-  display: flex;
-  height: 48px;
-  padding: 10px 16px;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  border: 1px solid var(--Text-Black-text-black-50, #e7e7e7);
-  color: var(--Grey-Primary, #7b7b7b);
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.32px;
-}
-
-.contact-form-inputs input:not(:placeholder-shown) {
-  color: var(--Black-Primary, #121212);
-}
-
-.contact-form-inputs textarea {
-  resize: none;
-  display: flex;
-  height: 150px;
-  padding: 10px 16px;
-  align-items: center;
-  gap: 10px;
-  align-self: stretch;
-  border: 1px solid var(--Text-Black-text-black-50, #e7e7e7);
-  color: var(--Grey-Primary, #7b7b7b);
-  font-family: Manrope;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: -0.32px;
-}
-
-.contact-form-inputs textarea:not(:placeholder-shown) {
-  color: var(--Black-Primary, #121212);
-}
-
-.contact-form-imgs {
-  width: 60%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 400px);
-  gap: 16px;
-  grid-template-areas:
-    "box-1 box-1 box-1 box-2 box-2"
-    "box-3 box-3 box-4 box-4 box-4";
-}
-
-.contact-form-inputs-divide {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-}
-
-.contact-form-inputs-divide section {
-  width: calc(50% - 12px);
-}
-
-.contact-form-checkbox {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  gap: 7px;
-  align-self: stretch;
-}
-
-.contact-form-checkbox input {
-  width: 24px;
-  height: 24px;
-  aspect-ratio: 1/1;
-}
-
-.contact-form-checkbox label {
-  color: var(--Text-Black-text-black-300, #606060);
-  font-family: Manrope;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  letter-spacing: -0.36px;
-}
-
-.contact-form .primary-btn {
-  width: 100%;
-}
-
 /* Coorg */
 
 .coorg-trek {
@@ -1833,6 +1702,201 @@ header nav a:hover {
 
 .coorg-gallery .gallery-set {
   height: auto;
+}
+
+/* Gallery */
+
+.gallery-space {
+  width: 100%;
+  display: flex;
+  padding: 40px 0 64px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 64px;
+}
+
+.gallery-space-set {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.gallery-space-set h3 {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.gallery-space-set-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.gallery-space-set-img {
+  width: 100%;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gallery-space-set-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.gallery-space-set-img:hover img {
+  scale: 1.1;
+}
+
+/* Contact */
+
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+
+.contact-form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  flex-shrink: 0;
+}
+
+.contact-form-inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.contact-form-inputs section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.contact-form-inputs label {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.contact-form-inputs input {
+  display: flex;
+  height: 48px;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border: 1px solid var(--Text-Black-text-black-50, #e7e7e7);
+  color: var(--Grey-Primary, #7b7b7b);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.contact-form-inputs input:not(:placeholder-shown) {
+  color: var(--Black-Primary, #121212);
+}
+
+.contact-form-inputs textarea {
+  resize: none;
+  display: flex;
+  height: 150px;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border: 1px solid var(--Text-Black-text-black-50, #e7e7e7);
+  color: var(--Grey-Primary, #7b7b7b);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.contact-form-inputs textarea:not(:placeholder-shown) {
+  color: var(--Black-Primary, #121212);
+}
+
+.contact-form-imgs {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 400px);
+  gap: 16px;
+  grid-template-areas:
+    "box-1 box-1 box-1 box-2 box-2"
+    "box-3 box-3 box-4 box-4 box-4";
+}
+
+.contact-form-inputs-divide {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.contact-form-inputs-divide section {
+  width: calc(50% - 12px);
+}
+
+.contact-form-checkbox {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  align-self: stretch;
+}
+
+.contact-form-checkbox input {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+
+.contact-form-checkbox label {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.contact-form .primary-btn {
+  width: 100%;
 }
 
 /* Footer */
