@@ -139,7 +139,7 @@ const AccomodationsSet = ({
 };
 
 function Accomodations() {
-  const [activeTab, setActiveTab] = useState("FamilyAndFriends");
+  const [activeTab, setActiveTab] = useState("SoloTravelers");
 
   const tabs = [
     { id: "SoloTravelers", label: "Solo Travelers" },
@@ -178,7 +178,7 @@ function Accomodations() {
           title="Deluxe Room / Honeymoon Suite"
           NoOfBeds="Queen-size bed"
           amenities="Private premium bathroom with bathtub, Romantic décor, balcony, Breakfast included (optional), Custom menu options"
-          toLink="/solotravelers"
+          toLink="solo-travelers"
         />
       )}
 

@@ -10,6 +10,7 @@ import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import RoomDetailsGallery from "./components/RoomDetailsGallery";
+import SoloTravelers from "./components/Accomodations/SoloTravelers";
 
 function App() {
   // return <ComingSoon />;
@@ -22,6 +23,10 @@ function App() {
           <Route index element={<Home />} />
           <Route path="roomdetailsgallery" element={<RoomDetailsGallery />} />
           <Route path="accomodations" element={<Accomodations />} />
+          <Route
+            path="accomodations/solo-travelers"
+            element={<SoloTravelers />}
+          />
           <Route path="coorg" element={<Coorg />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />

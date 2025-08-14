@@ -1541,6 +1541,34 @@ header nav .active-navbar-link:hover {
 
 /* Room Details */
 
+.room-details {
+  width: 100%;
+  display: flex;
+  padding: 40px 160px 80px 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.room-details-hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+}
+
+.room-details-hero h1 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
 .back-to-details {
   display: flex;
   align-items: center;
@@ -1574,6 +1602,322 @@ header nav .active-navbar-link:hover {
 
 .back-to-details p {
   color: var(--Text-Black-text-black-200, #929292);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.room-details-hero-gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 240px);
+  gap: 16px;
+  grid-template-areas:
+    "box-1 box-2 box-3"
+    "box-1 box-4 box-5";
+  position: relative;
+}
+
+.room-details-hero-gallery-img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.room-details-hero-gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s;
+}
+
+.room-details-hero-gallery-img:hover img {
+  scale: 1.1;
+}
+
+.room-details-hero-gallery-img:last-child:hover img {
+  scale: none;
+}
+
+.room-details-hero-gallery-img:last-child {
+  position: relative;
+}
+
+.room-details-hero-gallery-img:last-child::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.show-more-photos-btn {
+  z-index: 1;
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  height: 40px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: var(--White, #fff);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.show-more-photos-btn:hover {
+  background: #e7e7e7;
+}
+
+.show-more-photos-btn svg {
+  width: 24px;
+  height: 24px;
+  aspect-ratio: 1/1;
+}
+
+.show-more-photos-btn p {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.room-details-hero-labels {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  border: 1px solid var(--Text-Black-text-black-100, #b6b6b6);
+}
+
+.room-details-hero-labels label {
+  color: #000;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.room-details-hero-labels span {
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e7e7e7;
+}
+
+.room-details-hero-price {
+  width: 100%;
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+  background: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.08);
+}
+
+.room-details-hero-price-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.room-details-hero-price-buttons button {
+  display: inline-flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--Grey-grey-400, #959595);
+  color: var(--Text-Black-text-black-200, #929292);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.32px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.room-details-hero-price-buttons button:hover {
+  background: #e7e7e7;
+}
+
+.room-details-hero-price-buttons .active-room-details-hero-price-button {
+  color: var(--Brown-Primary, #974c08);
+  border: 1px solid var(--Brown-Primary, #974c08);
+  background: var(--Brown-brown-50, #f5ede6);
+  cursor: default;
+}
+
+.room-details-hero-price-buttons .active-room-details-hero-price-button:hover {
+  color: var(--Brown-Primary, #974c08);
+  border: 1px solid var(--Brown-Primary, #974c08);
+  background: var(--Brown-brown-50, #f5ede6);
+  cursor: default;
+}
+
+.room-details-hero-info {
+  width: 100%;
+  display: flex;
+  padding: 4px 0;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+.room-details-hero-info-left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.room-details-hero-info-left section {
+  display: flex;
+  min-width: 148px;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.room-details-hero-info-left section span {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.room-details-hero-info-left section p {
+  color: var(--Text-Black-Primary, #121212);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.room-details-hero-info-left-line {
+  align-self: stretch;
+  width: 1px;
+  background: #e7e7e7;
+}
+
+.room-details-hero-info-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.room-details-hero .room-details-hero-info-right h2 {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+
+.room-details-hero-info-right h2 span {
+  color: var(--Text-Black-text-black-200, #929292);
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+.room-details-hero-info-right .primary-btn {
+  width: 196px;
+}
+
+.room-details-hero-about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  align-self: stretch;
+}
+
+.room-details-hero h2 {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.56px;
+}
+
+.room-details-hero-about section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.room-details-hero-about-text {
+  max-width: 870px;
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.room-details-hero-facilities {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.room-details-hero-facilities label {
+  display: flex;
+  padding: 4px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--grey-grey-50, #f2f2f2);
+  color: var(--Text-Black-primary, #121212);
   font-family: Manrope;
   font-size: 16px;
   font-style: normal;
