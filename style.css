@@ -1555,6 +1555,15 @@ header nav .active-navbar-link:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 56px;
+  align-self: stretch;
+}
+
+.room-details-hero-top {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 32px;
   align-self: stretch;
 }
@@ -1926,6 +1935,14 @@ header nav .active-navbar-link:hover {
   letter-spacing: -0.32px;
 }
 
+.room-details-hero-about .active-faq .faq-set-heading svg path:first-child {
+  opacity: 1;
+}
+
+.room-details-hero-about .testimony {
+  min-height: auto;
+}
+
 /* Room Details Gallery*/
 
 .room-details-gallery {
@@ -2285,10 +2302,35 @@ header nav .active-navbar-link:hover {
     "box-4 box-8 box-6"
     "box-7 box-8 box-9"
     "box-7 box-8 box-9";
+  position: relative;
+  overflow: hidden;
 }
 
 .coorg-gallery .gallery-set {
   height: auto;
+}
+
+.coorg-gallery-overlay {
+  position: absolute;
+  width: 200%;
+  height: 110%;
+  bottom: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #fff;
+  filter: blur(150px);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+}
+
+.coorg-gallery .primary-btn {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 /* Gallery */

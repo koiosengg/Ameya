@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Trekking from "../../assets/Coorg/Gallery/Trekking.png";
 import WoodenBridge from "../../assets/Coorg/Gallery/Wooden Bridge.png";
 import FamilySpots from "../../assets/Coorg/Gallery/Family Spots.png";
@@ -9,7 +10,7 @@ import CoffeePlantations from "../../assets/Coorg/Gallery/Coffee Plantations.png
 import ExploreFarms from "../../assets/Coorg/Gallery/Explore Farms.png";
 import WildLifeSafari from "../../assets/Coorg/Gallery/Wild Life Safari.png";
 
-function Gallery() {
+function Gallery({ overlay }) {
   return (
     <div className="section-template">
       <div className="section-template-heading">
@@ -75,6 +76,35 @@ function Gallery() {
             <h3>Wild Life Safari</h3>
           </section>
         </div>
+        <div className="coorg-gallery-overlay"></div>
+        <Link to="/coorg" className="primary-btn">
+          <p>Explore Coorg</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+          >
+            <mask
+              id="mask0_377_5577"
+              style={{ maskType: "alpha" }}
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="25"
+              height="25"
+            >
+              <rect x="0.5" y="0.5" width="24" height="24" fill="#D9D9D9" />
+            </mask>
+            <g mask="url(#mask0_377_5577)">
+              <path
+                d="M16.675 13.5H4.5V11.5H16.675L11.075 5.9L12.5 4.5L20.5 12.5L12.5 20.5L11.075 19.1L16.675 13.5Z"
+                fill="white"
+              />
+            </g>
+          </svg>
+        </Link>
       </div>
     </div>
   );

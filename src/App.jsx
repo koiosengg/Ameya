@@ -9,9 +9,8 @@ import Coorg from "./components/Coorg";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
-import RoomDetailsGallery from "./components/RoomDetailsGallery";
 import SoloTravelers from "./components/Accomodations/SoloTravelers";
-
+import SoloTravelersGallery from "./components/Accomodations/SoloTravelersGallery";
 function App() {
   // return <ComingSoon />;
   return (
@@ -21,11 +20,14 @@ function App() {
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
-          <Route path="roomdetailsgallery" element={<RoomDetailsGallery />} />
           <Route path="accomodations" element={<Accomodations />} />
           <Route
             path="accomodations/solo-travelers"
             element={<SoloTravelers />}
+          />
+          <Route
+            path="accomodations/solo-travelers/gallery"
+            element={<SoloTravelersGallery />}
           />
           <Route path="coorg" element={<Coorg />} />
           <Route path="gallery" element={<Gallery />} />
