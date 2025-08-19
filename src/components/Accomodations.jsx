@@ -189,7 +189,7 @@ function Accomodations() {
           title="Family Suite / Triple / Quad Room"
           NoOfBeds="Multiple beds (queen + single beds)"
           amenities="Attached bathroom, Common seating area, Breakfast included (optional)"
-          toLink="/familyandfriends"
+          toLink="family-and-friends"
         />
       )}
 
@@ -200,7 +200,7 @@ function Accomodations() {
           title="Large Family Room, multiple rooms"
           NoOfBeds="Multiple beds (bunk beds or separate single beds)"
           amenities="Attached bathroom in each room, Common areas, Suitable for group travellers or extended families"
-          toLink="/smallergroups"
+          toLink="smaller-groups"
         />
       )}
 
@@ -211,7 +211,7 @@ function Accomodations() {
           title="Private Entrance, Multiple Rooms, Common Hall, dining space"
           NoOfBeds="Multiple interconnected rooms (e.g., 4 rooms with 3 to 5 beds each)"
           amenities="Shared common hall (for dining, meetings, or socializing), Bulk discount for booking entire space"
-          toLink="/largergroups"
+          toLink="larger-groups"
         />
       )}
     </div>

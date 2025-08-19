@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import LivingRoomImg1 from "../../assets/Accomodations/Solo Travelers/Living Room/Living Room Image 1.jpg";
-import LivingRoomImg2 from "../../assets/Accomodations/Solo Travelers/Living Room/Living Room Image 2.jpg";
-import BathroomsImg1 from "../../assets/Accomodations/Solo Travelers/Bathrooms/Bathroom Image 1.jpg";
-import BedroomsImg1 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Image 1.jpg";
-import BedroomsImg2 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Image 2.jpg";
+import LivingRoomImg1 from "../../assets/Accomodations/Solo Travelers/Living Room/Living Room Img 1.jpg";
+import LivingRoomImg2 from "../../assets/Accomodations/Solo Travelers/Living Room/Living Room Img 2.jpg";
+import BathroomsImg1 from "../../assets/Accomodations/Solo Travelers/Bathrooms/Bathroom Img 1.jpg";
+import BedroomsImg1 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 1.jpg";
+import BedroomsImg2 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 2.jpg";
 import AnandMahajan from "../../assets/Testimony/Anand Mahajan.png";
 import KritiPrakash from "../../assets/Testimony/Kriti Prakash.png";
 import Star from "../../assets/Testimony/Star.svg";
