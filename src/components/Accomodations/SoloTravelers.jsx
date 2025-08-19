@@ -11,6 +11,29 @@ import Star from "../../assets/Testimony/Star.svg";
 import Reach from "../Reach";
 import CoorgGallery from "../Coorg/Gallery";
 
+const AboutInfo = ({ info }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const words = info.split(" ");
+  const shortText = words.slice(0, 100).join(" ");
+
+  return (
+    <section>
+      <p className="room-details-hero-about-text">
+        {isExpanded ? info : shortText + (words.length > 100 ? " . . . " : "")}
+      </p>
+      {words.length > 100 && (
+        <Link
+          className="tertiary-btn"
+          onClick={() => setIsExpanded(!isExpanded)}
+        >
+          <p>{isExpanded ? "See less" : "Read more"}</p>
+        </Link>
+      )}
+    </section>
+  );
+};
+
 function SoloTravelers() {
   const [activeOption, setActiveOption] = useState(true);
   const [activeIndexFAQ, setActiveIndexFAQ] = useState(null);
@@ -269,18 +292,15 @@ function SoloTravelers() {
           </div>
           <div className="room-details-hero-about">
             <h2>About the Room</h2>
-            <section>
-              <p className="room-details-hero-about-text">
-                Lorem ipsum dolor sit amet consectetur. Ultricies sed
+            <AboutInfo
+              info=" Lorem ipsum dolor sit amet consectetur. Ultricies sed
                 ullamcorper dictum in consequat viverra diam. Sed duis faucibus
                 consectetur enim nunc amet. Mattis cursus ultrices sit eu lacus
                 velit. Nulla eros felis faucibus dis fringilla fringilla purus
-                tristique imperdiet.
-              </p>
-              <Link className="tertiary-btn">
-                <p>Read more</p>
-              </Link>
-            </section>
+                tristique imperdiet.Ultricies sed ullamcorper dictum in consequat viverra diam. Sed duis faucibus
+                consectetur enim nunc amet. Mattis cursus ultrices sit eu lacus
+                velit. "
+            />
           </div>
           <div className="room-details-hero-about">
             <h2>Popular Facilities</h2>
@@ -301,9 +321,6 @@ function SoloTravelers() {
                 <label>Room Service</label>
                 <label>No Smoking Rooms</label>
               </div>
-              {/* <Link className="tertiary-btn">
-              <p>See more</p>
-            </Link> */}
             </section>
           </div>
           <div className="room-details-hero-about">
@@ -603,18 +620,15 @@ function SoloTravelers() {
           </div>
           <div className="room-details-hero-about">
             <h2>Cancellation Policy</h2>
-            <section>
-              <p className="room-details-hero-about-text">
-                Lorem ipsum dolor sit amet consectetur. Ultricies sed
+            <AboutInfo
+              info=" Lorem ipsum dolor sit amet consectetur. Ultricies sed
                 ullamcorper dictum in consequat viverra diam. Sed duis faucibus
                 consectetur enim nunc amet. Mattis cursus ultrices sit eu lacus
                 velit. Nulla eros felis faucibus dis fringilla fringilla purus
-                tristique imperdiet.
-              </p>
-              <Link className="tertiary-btn">
-                <p>Read more</p>
-              </Link>
-            </section>
+                tristique imperdiet.Ultricies sed ullamcorper dictum in consequat viverra diam. Sed duis faucibus
+                consectetur enim nunc amet. Mattis cursus ultrices sit eu lacus
+                velit. "
+            />
           </div>
         </div>
       </div>
