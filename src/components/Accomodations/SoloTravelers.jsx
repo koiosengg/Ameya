@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import LivingRoomImg1 from "../../assets/Accomodations/Solo Travelers/Living Room/Living Room Img 1.jpg";
-import LivingRoomImg2 from "../../assets/Accomodations/Solo Travelers/Living Room/Living Room Img 2.jpg";
 import BathroomsImg1 from "../../assets/Accomodations/Solo Travelers/Bathrooms/Bathroom Img 1.jpg";
 import BedroomsImg1 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 1.jpg";
+import BalconyImg1 from "../../assets/Accomodations/Solo Travelers/Balcony/Balcony Img 1.jpg";
+import BalconyImg2 from "../../assets/Accomodations/Solo Travelers/Balcony/Balcony Img 2.jpg";
 import BedroomsImg2 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 2.jpg";
 import AnandMahajan from "../../assets/Testimony/Anand Mahajan.png";
 import KritiPrakash from "../../assets/Testimony/Kriti Prakash.png";
@@ -206,31 +206,31 @@ function SoloTravelers() {
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-1" }}
               >
-                <img src={LivingRoomImg1} alt="Solo Travelers Living Room" />
+                <img src={BedroomsImg1} alt="Solo Travelers Living Room" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-2" }}
               >
-                <img src={LivingRoomImg2} alt="Solo Travelers Living Room" />
+                <img src={BedroomsImg2} alt="Solo Travelers Living Room" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-3" }}
               >
-                <img src={BathroomsImg1} alt="Solo Travelers Bathrooms" />
+                <img src={BalconyImg1} alt="Solo Travelers Bathrooms" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-4" }}
               >
-                <img src={BedroomsImg1} alt="Solo Travelers Bedrooms" />
+                <img src={BalconyImg2} alt="Solo Travelers Bedrooms" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-5" }}
               >
-                <img src={BedroomsImg2} alt="Solo Travelers Bedrooms" />
+                <img src={BathroomsImg1} alt="Solo Travelers Bedrooms" />
               </div>
             </div>
             <div className="room-details-hero-labels">

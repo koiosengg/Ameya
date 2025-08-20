@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import LivingRoomImg1 from "../../assets/Accomodations/Smaller Groups/Living Room/Living Room Img 1.jpg";
-import LivingRoomImg2 from "../../assets/Accomodations/Smaller Groups/Living Room/Living Room Img 2.jpg";
+import BalconyImg1 from "../../assets/Accomodations/Smaller Groups/Balcony/Balcony Img 1.jpg";
 import BathroomsImg1 from "../../assets/Accomodations/Smaller Groups/Bathrooms/Bathroom Img 1.jpg";
 import BedroomsImg1 from "../../assets/Accomodations/Smaller Groups/Bedrooms/Bedrooms Img 1.jpg";
 import BedroomsImg2 from "../../assets/Accomodations/Smaller Groups/Bedrooms/Bedrooms Img 2.jpg";
@@ -206,13 +206,13 @@ function SmallerGroups() {
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-1" }}
               >
-                <img src={LivingRoomImg1} alt="Smaller Groups Living Room" />
+                <img src={BedroomsImg1} alt="Smaller Groups Living Room" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-2" }}
               >
-                <img src={LivingRoomImg2} alt="Smaller Groups Living Room" />
+                <img src={BedroomsImg2} alt="Smaller Groups Living Room" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
@@ -224,13 +224,13 @@ function SmallerGroups() {
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-4" }}
               >
-                <img src={BedroomsImg1} alt="Smaller Groups Bedrooms" />
+                <img src={LivingRoomImg1} alt="Smaller Groups Bedrooms" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-5" }}
               >
-                <img src={BedroomsImg2} alt="Smaller Groups Bedrooms" />
+                <img src={BalconyImg1} alt="Smaller Groups Bedrooms" />
               </div>
             </div>
             <div className="room-details-hero-labels">

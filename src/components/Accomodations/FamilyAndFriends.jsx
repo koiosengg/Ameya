@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import LivingRoomImg1 from "../../assets/Accomodations/Family And Friends/Living Room/Living Room Img 1.jpg";
-import LivingRoomImg2 from "../../assets/Accomodations/Family And Friends/Living Room/Living Room Img 2.jpg";
 import BathroomsImg1 from "../../assets/Accomodations/Family And Friends/Bathrooms/Bathroom Img 1.jpg";
 import BedroomsImg1 from "../../assets/Accomodations/Family And Friends/Bedrooms/Bedrooms Img 1.jpg";
 import BedroomsImg2 from "../../assets/Accomodations/Family And Friends/Bedrooms/Bedrooms Img 2.jpg";
+import BedroomsImg3 from "../../assets/Accomodations/Family And Friends/Bedrooms/Bedrooms Img 3.jpg";
+import BedroomsImg4 from "../../assets/Accomodations/Family And Friends/Bedrooms/Bedrooms Img 4.jpg";
 import AnandMahajan from "../../assets/Testimony/Anand Mahajan.png";
 import KritiPrakash from "../../assets/Testimony/Kriti Prakash.png";
 import Star from "../../assets/Testimony/Star.svg";
@@ -206,13 +206,13 @@ function FamilyAndFriends() {
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-1" }}
               >
-                <img src={LivingRoomImg1} alt="Family and Friends Living Room" />
+                <img src={BedroomsImg1} alt="Family and Friends Living Room" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-2" }}
               >
-                <img src={LivingRoomImg2} alt="Family and Friends Living Room" />
+                <img src={BedroomsImg2} alt="Family and Friends Living Room" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
@@ -224,13 +224,13 @@ function FamilyAndFriends() {
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-4" }}
               >
-                <img src={BedroomsImg1} alt="Family and Friends Bedrooms" />
+                <img src={BedroomsImg3} alt="Family and Friends Bedrooms" />
               </div>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-5" }}
               >
-                <img src={BedroomsImg2} alt="Family and Friends Bedrooms" />
+                <img src={BedroomsImg4} alt="Family and Friends Bedrooms" />
               </div>
             </div>
             <div className="room-details-hero-labels">

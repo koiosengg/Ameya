@@ -1,11 +1,17 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import Img1 from "../assets/Gallery/Space/Bedrooms/Bedrooms Img 1.jpg";
-import Img2 from "../assets/Gallery/Space/Bedrooms/Bedrooms Img 2.jpg";
-import Img3 from "../assets/Gallery/Space/Bedrooms/Bedrooms Img 3.jpg";
-import Img4 from "../assets/Gallery/Space/Bedrooms/Bedrooms Img 4.jpg";
-import Img5 from "../assets/Gallery/Space/Bedrooms/Bedrooms Img 5.jpg";
-import Img6 from "../assets/Gallery/Space/Bedrooms/Bedrooms Img 6.jpg";
+import SoloTravelers1 from "../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 1.jpg";
+import SoloTravelers2 from "../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 2.jpg";
+import SoloTravelers3 from "../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 3.jpg";
+import FamilyAndFriends1 from "../assets/Accomodations/Family And Friends/Bedrooms/Bedrooms Img 1.jpg";
+import FamilyAndFriends2 from "../assets/Accomodations/Family And Friends/Bedrooms/Bedrooms Img 2.jpg";
+import FamilyAndFriends3 from "../assets/Accomodations/Family And Friends/Bedrooms/Bedrooms Img 3.jpg";
+import SmallerGroups1 from "../assets/Accomodations/Smaller Groups/Bedrooms/Bedrooms Img 1.jpg";
+import SmallerGroups2 from "../assets/Accomodations/Smaller Groups/Bedrooms/Bedrooms Img 2.jpg";
+import SmallerGroups3 from "../assets/Accomodations/Smaller Groups/Bedrooms/Bedrooms Img 3.jpg";
+import LargerGroups1 from "../assets/Accomodations/Larger Groups/Bedrooms/Bedrooms Img 1.jpg";
+import LargerGroups2 from "../assets/Accomodations/Larger Groups/Bedrooms/Bedrooms Img 2.jpg";
+import LargerGroups3 from "../assets/Accomodations/Larger Groups/Bedrooms/Bedrooms Img 3.jpg";
 
 const AccomodationsSet = ({
   NoOfguests,
@@ -174,7 +180,7 @@ function Accomodations() {
       {activeTab === "SoloTravelers" && (
         <AccomodationsSet
           NoOfguests=" Rooms for 1-2 People"
-          images={[Img4, Img6, Img3]}
+          images={[SoloTravelers3, SoloTravelers1, SoloTravelers2]}
           title="Deluxe Room / Honeymoon Suite"
           NoOfBeds="Queen-size bed"
           amenities="Private premium bathroom with bathtub, Romantic décor, balcony, Breakfast included (optional), Custom menu options"
@@ -185,7 +191,7 @@ function Accomodations() {
       {activeTab === "FamilyAndFriends" && (
         <AccomodationsSet
           NoOfguests=" Rooms for 4-5 People"
-          images={[Img5, Img2, Img3]}
+          images={[FamilyAndFriends1, FamilyAndFriends2, FamilyAndFriends3]}
           title="Family Suite / Triple / Quad Room"
           NoOfBeds="Multiple beds (queen + single beds)"
           amenities="Attached bathroom, Common seating area, Breakfast included (optional)"
@@ -196,7 +202,7 @@ function Accomodations() {
       {activeTab === "SmallerGroups" && (
         <AccomodationsSet
           NoOfguests=" Rooms for 5-10 People"
-          images={[Img1, Img2, Img5]}
+          images={[SmallerGroups3, SmallerGroups2, SmallerGroups1]}
           title="Large Family Room, multiple rooms"
           NoOfBeds="Multiple beds (bunk beds or separate single beds)"
           amenities="Attached bathroom in each room, Common areas, Suitable for group travellers or extended families"
@@ -207,7 +213,7 @@ function Accomodations() {
       {activeTab === "LargerGroups" && (
         <AccomodationsSet
           NoOfguests=" Rooms for 10-25 People"
-          images={[Img6, Img2, Img4]}
+          images={[LargerGroups1, LargerGroups2, LargerGroups3]}
           title="Private Entrance, Multiple Rooms, Common Hall, dining space"
           NoOfBeds="Multiple interconnected rooms (e.g., 4 rooms with 3 to 5 beds each)"
           amenities="Shared common hall (for dining, meetings, or socializing), Bulk discount for booking entire space"
