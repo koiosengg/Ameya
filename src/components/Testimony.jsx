@@ -14,7 +14,12 @@ function Testimony() {
   useEffect(() => {
     const updateValues = () => {
       const sets = slideRef.current?.children.length || 0;
-      setTotalGroups(Math.ceil(sets / 2));
+      const isMobile = window.innerWidth < 1200;
+
+      // if screen < 1200px → 1 per group, else 2 per group
+      const perGroup = isMobile ? 1 : 2;
+
+      setTotalGroups(Math.ceil(sets / perGroup));
       setContainerWidth(containerRef.current?.offsetWidth || 0);
     };
 
@@ -54,7 +59,7 @@ function Testimony() {
       <div className="testimony">
         <img src={Background} className="testimony-background" />
         <div
-          className="testimony-controls"
+          className="testimony-controls left"
           onClick={handleLeftClick}
           style={{
             opacity: activeIndex === 0 ? 0.3 : 1,
@@ -241,14 +246,12 @@ function Testimony() {
               <p>
                 Lorem ipsum dolor sit amet consectetur. Egestas amet malesuada
                 nisi nunc eleifend. Tempor in consequat sapien imperdiet diam.
-                Rhoncus convallis imperdiet diam vitae aliquam sagittis vel.
-                Enim porttitor id vel consectetur felis sed.
               </p>
             </div>
           </div>
         </div>
         <div
-          className="testimony-controls"
+          className="testimony-controls right"
           onClick={handleRightClick}
           style={{
             opacity: activeIndex === totalGroups - 1 ? 0.3 : 1,
