@@ -138,7 +138,7 @@ function Hero() {
           ))}
         </div>
         <div className="home-hero-buttons">
-          <Link to="/" className="home-hero-button">
+          <Link to="/contact" className="home-hero-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="219"

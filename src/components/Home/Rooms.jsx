@@ -42,20 +42,20 @@ function Rooms() {
             transition: "transform 0.5s ease",
           }}
         >
-          <div className="home-rooms-set" ref={setRef}>
-            <img src={FamilyAndFriends} alt="Family and Friends Room" />
-            <section>
-              <h3>Family & Friends</h3>
-              <Link to="/" className="tertiary-btn">
-                <p>More Details</p>
-              </Link>
-            </section>
-          </div>
           <div className="home-rooms-set">
             <img src={SoloTravelers} alt="Solo Travelers Room" />
             <section>
               <h3>Solo Travelers</h3>
-              <Link to="/" className="tertiary-btn">
+              <Link to="/accomodations/solo-travelers" className="tertiary-btn">
+                <p>More Details</p>
+              </Link>
+            </section>
+          </div>
+          <div className="home-rooms-set" ref={setRef}>
+            <img src={FamilyAndFriends} alt="Family and Friends Room" />
+            <section>
+              <h3>Family & Friends</h3>
+              <Link to="/accomodations/family-and-friends" className="tertiary-btn">
                 <p>More Details</p>
               </Link>
             </section>
@@ -64,7 +64,7 @@ function Rooms() {
             <img src={LargerGroups} alt="Larger Groups Room" />
             <section>
               <h3>Larger Groups</h3>
-              <Link to="/" className="tertiary-btn">
+              <Link to="/accomodations/smaller-groups" className="tertiary-btn">
                 <p>More Details</p>
               </Link>
             </section>
@@ -73,7 +73,7 @@ function Rooms() {
             <img src={SmallerGroups} alt="Smaller Groups Room" />
             <section>
               <h3>Smaller Groups</h3>
-              <Link to="/" className="tertiary-btn">
+              <Link to="/accomodations/larger-groups" className="tertiary-btn">
                 <p>More Details</p>
               </Link>
             </section>

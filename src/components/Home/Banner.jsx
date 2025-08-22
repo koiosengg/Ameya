@@ -20,7 +20,7 @@ function Banner() {
               like home, yet so much more.
             </p>
           </section>
-          <Link to="/" className="primary-btn">
+          <Link to="/accomodations" className="primary-btn">
             <p>Explore Rooms</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
