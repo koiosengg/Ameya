@@ -1,5 +1,6 @@
 import React from "react";
 import DesktopBackground from "../../assets/Contact/Hero/Desktop Background.png";
+import Mandala from "../../assets/Home/Banner/Mandala.svg";
 
 function Hero() {
   return (
@@ -18,6 +19,7 @@ function Hero() {
           <h1>Reach Out, Let’s Connect</h1>
         </section>
       </div>
+      <img src={Mandala} className="home-hero-mandala" />
     </div>
   );
 }

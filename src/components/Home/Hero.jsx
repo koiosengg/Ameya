@@ -183,7 +183,11 @@ function Hero() {
               </svg>
             </div>
           </Link>
-          <Link to="/" className="home-hero-button">
+          <a
+            href="https://wa.me/919538507768"
+            target="_blank"
+            className="home-hero-button"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="219"
@@ -227,7 +231,7 @@ function Hero() {
                 </g>
               </svg>
             </div>
-          </Link>
+          </a>
         </div>
       </div>
 

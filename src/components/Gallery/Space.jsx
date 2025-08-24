@@ -26,7 +26,7 @@ import BathroomsImg6 from "../../assets/Gallery/Space/Bathrooms/Bathrooms Img 6.
 
 const Spaceset = ({ title, images }) => {
   return (
-    <div className="gallery-space-set">
+    <div className="gallery-space-set" style={{ gridArea: "box-3" }}>
       <h3>{title}</h3>
       <div className="gallery-space-set-container">
         {images.map((image, key) => (
