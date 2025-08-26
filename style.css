@@ -3239,6 +3239,103 @@ footer {
     max-width: 285px;
   }
 
+  /* Accomodations */
+
+  .accomodations {
+    padding: 24px 20px 48px 20px;
+    gap: 16px;
+  }
+
+  .accomodations-heading {
+    gap: 16px;
+  }
+
+  .accomodations-heading-text h2 {
+    color: var(--Text-Black-Primary, #121212);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+
+  .accomodations-heading-text p {
+    color: var(--Text-Black-text-black-300, #606060);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .accomodations-heading-tabs {
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .accomodations-heading-tabs ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .accomodations-heading-tab {
+    flex-shrink: 0;
+  }
+
+  .accomodations-container {
+    gap: 24px;
+  }
+
+  .accomodations-container-heading {
+    color: var(--Text-Black-Primary, #121212);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
+  .accomodations-set-info {
+    gap: 24px;
+  }
+
+  .accomodations-set-info-text {
+    gap: 16px;
+  }
+
+  .accomodations-set-info-text h3 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.4px;
+  }
+
+  .accomodations-set-info-text h4 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+
+  .accomodations-set-info-text p {
+    color: var(--Text-Black-text-black-300, #606060);
+    font-family: Manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.28px;
+  }
+
   /* Coorg */
 
   .coorg-trek {
@@ -3330,6 +3427,11 @@ footer {
       "box-8 box-9";
     position: relative;
     overflow: hidden;
+  }
+
+  .coorg-gallery-overlay {
+    height: 90%;
+    filter: blur(80px);
   }
 
   /* Gallery */
