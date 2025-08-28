@@ -74,7 +74,11 @@ function SoloTravelers() {
   useEffect(() => {
     const updateValues = () => {
       const sets = slideRef.current?.children.length || 0;
-      setTotalGroups(Math.ceil(sets / 2));
+      const isMobile = window.innerWidth < 1200;
+
+      const perGroup = isMobile ? 1 : 2;
+
+      setTotalGroups(Math.ceil(sets / perGroup));
       setContainerWidth(containerRef.current?.offsetWidth || 0);
     };
 
@@ -125,83 +129,6 @@ function SoloTravelers() {
             </div>
             <h1>Luxury, Cottage, 1 King bed, Sofa bed, Garden view, Balcony</h1>
             <div className="room-details-hero-gallery">
-              <Link
-                to="/accomodations/solo-travelers/gallery"
-                className="show-more-photos-btn"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <path
-                    d="M20 18H19C18.4477 18 18 18.4477 18 19V20C18 20.5523 18.4477 21 19 21H20C20.5523 21 21 20.5523 21 20V19C21 18.4477 20.5523 18 20 18Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M20 10.5H19C18.4477 10.5 18 10.9477 18 11.5V12.5C18 13.0523 18.4477 13.5 19 13.5H20C20.5523 13.5 21 13.0523 21 12.5V11.5C21 10.9477 20.5523 10.5 20 10.5Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M20 3H19C18.4477 3 18 3.44772 18 4V5C18 5.55228 18.4477 6 19 6H20C20.5523 6 21 5.55228 21 5V4C21 3.44772 20.5523 3 20 3Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M12.5 18H11.5C10.9477 18 10.5 18.4477 10.5 19V20C10.5 20.5523 10.9477 21 11.5 21H12.5C13.0523 21 13.5 20.5523 13.5 20V19C13.5 18.4477 13.0523 18 12.5 18Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M12.5 10.5H11.5C10.9477 10.5 10.5 10.9477 10.5 11.5V12.5C10.5 13.0523 10.9477 13.5 11.5 13.5H12.5C13.0523 13.5 13.5 13.0523 13.5 12.5V11.5C13.5 10.9477 13.0523 10.5 12.5 10.5Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M12.5 3H11.5C10.9477 3 10.5 3.44772 10.5 4V5C10.5 5.55228 10.9477 6 11.5 6H12.5C13.0523 6 13.5 5.55228 13.5 5V4C13.5 3.44772 13.0523 3 12.5 3Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M5 18H4C3.44772 18 3 18.4477 3 19V20C3 20.5523 3.44772 21 4 21H5C5.55228 21 6 20.5523 6 20V19C6 18.4477 5.55228 18 5 18Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M5 10.5H4C3.44772 10.5 3 10.9477 3 11.5V12.5C3 13.0523 3.44772 13.5 4 13.5H5C5.55228 13.5 6 13.0523 6 12.5V11.5C6 10.9477 5.55228 10.5 5 10.5Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M5 3H4C3.44772 3 3 3.44772 3 4V5C3 5.55228 3.44772 6 4 6H5C5.55228 6 6 5.55228 6 5V4C6 3.44772 5.55228 3 5 3Z"
-                    stroke="#121212"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-                <p>Show more photos</p>
-              </Link>
               <div
                 className="room-details-hero-gallery-img"
                 style={{ gridArea: "box-1" }}
@@ -231,6 +158,83 @@ function SoloTravelers() {
                 style={{ gridArea: "box-5" }}
               >
                 <img src={BathroomsImg1} alt="Solo Travelers Bedrooms" />
+                <Link
+                  to="/accomodations/solo-travelers/gallery"
+                  className="show-more-photos-btn"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M20 18H19C18.4477 18 18 18.4477 18 19V20C18 20.5523 18.4477 21 19 21H20C20.5523 21 21 20.5523 21 20V19C21 18.4477 20.5523 18 20 18Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M20 10.5H19C18.4477 10.5 18 10.9477 18 11.5V12.5C18 13.0523 18.4477 13.5 19 13.5H20C20.5523 13.5 21 13.0523 21 12.5V11.5C21 10.9477 20.5523 10.5 20 10.5Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M20 3H19C18.4477 3 18 3.44772 18 4V5C18 5.55228 18.4477 6 19 6H20C20.5523 6 21 5.55228 21 5V4C21 3.44772 20.5523 3 20 3Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M12.5 18H11.5C10.9477 18 10.5 18.4477 10.5 19V20C10.5 20.5523 10.9477 21 11.5 21H12.5C13.0523 21 13.5 20.5523 13.5 20V19C13.5 18.4477 13.0523 18 12.5 18Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M12.5 10.5H11.5C10.9477 10.5 10.5 10.9477 10.5 11.5V12.5C10.5 13.0523 10.9477 13.5 11.5 13.5H12.5C13.0523 13.5 13.5 13.0523 13.5 12.5V11.5C13.5 10.9477 13.0523 10.5 12.5 10.5Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M12.5 3H11.5C10.9477 3 10.5 3.44772 10.5 4V5C10.5 5.55228 10.9477 6 11.5 6H12.5C13.0523 6 13.5 5.55228 13.5 5V4C13.5 3.44772 13.0523 3 12.5 3Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M5 18H4C3.44772 18 3 18.4477 3 19V20C3 20.5523 3.44772 21 4 21H5C5.55228 21 6 20.5523 6 20V19C6 18.4477 5.55228 18 5 18Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M5 10.5H4C3.44772 10.5 3 10.9477 3 11.5V12.5C3 13.0523 3.44772 13.5 4 13.5H5C5.55228 13.5 6 13.0523 6 12.5V11.5C6 10.9477 5.55228 10.5 5 10.5Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M5 3H4C3.44772 3 3 3.44772 3 4V5C3 5.55228 3.44772 6 4 6H5C5.55228 6 6 5.55228 6 5V4C6 3.44772 5.55228 3 5 3Z"
+                      stroke="#121212"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                  <p>Show more photos</p>
+                </Link>
               </div>
             </div>
             <div className="room-details-hero-labels">
