@@ -41,7 +41,7 @@ const Spaceset = ({ title, images }) => {
 
 function Space() {
   return (
-    <div className="section-template">
+    <div className="section-template"  style={{ position: "relative", zIndex: "5" }}>
       <div className="section-template-heading">
         <h2>Step Inside Our Spaces</h2>
         <p>

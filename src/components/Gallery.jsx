@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./Gallery/Hero";
 import Space from "./Gallery/Space";
+import Banner from "./Home/Banner";
 import CoorgGallery from "./Coorg/Gallery";
 import Cafe from "./Home/Cafe";
 import HomeGallery from "./Home/Gallery";
@@ -14,6 +15,7 @@ function Gallery() {
       <Hero />
       <Space />
       <CoorgGallery />
+      <Banner />
       <Cafe />
       <HomeGallery />
       <Testimony />

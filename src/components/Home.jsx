@@ -5,9 +5,9 @@ import Banner from "./Home/Banner";
 import Amenities from "./Home/Amenities";
 import Rooms from "./Home/Rooms";
 import Testimony from "./Testimony";
-import HomeGallery from "./Home/Gallery";
+import Gallery from "./Home/Gallery";
 import Reach from "./Reach";
-import CoorgGallery from "./Coorg/Gallery";
+import Coorg from "./Home/Coorg";
 import Cafe from "./Home/Cafe";
 import Relax from "./Relax";
 import Blog from "./Home/Blog";
@@ -21,10 +21,10 @@ function Home() {
       <Banner />
       <Rooms />
       <Amenities />
-      <HomeGallery />
+      <Gallery />
       <Testimony />
       <Reach />
-      <CoorgGallery />
+      <Coorg />
       <Cafe />
       <Relax />
       <Blog />

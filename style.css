@@ -787,6 +787,7 @@ header nav .active-navbar-link:hover {
   position: relative;
   overflow: hidden;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .gallery-set::before {

@@ -3,6 +3,10 @@ import Background from "../assets/Testimony/Background.svg";
 import AnandMahajan from "../assets/Testimony/Anand Mahajan.png";
 import KritiPrakash from "../assets/Testimony/Kriti Prakash.png";
 import Star from "../assets/Testimony/Star.svg";
+import Kumarsudip from "../assets/Testimony/Kumarsudip.png";
+import Sutonuka from "../assets/Testimony/Sutonuka.jpg";
+import Nalini from "../assets/Testimony/Nalini.jpg";
+import Karthikeyan from "../assets/Testimony/Karthikeyan.jpg";
 
 function Testimony() {
   const containerRef = useRef(null);
@@ -109,10 +113,10 @@ function Testimony() {
             <div className="testimony-set">
               <div className="testimony-set-heading">
                 <div className="testimony-info">
-                  <img src={AnandMahajan} alt="Anand Mahajan" />
+                  <img src={Nalini} alt="Nalini" />
                   <section>
-                    <h3>Anand Mahajan</h3>
-                    <span>Sun, 12 Jan 2025</span>
+                    <h3>Nalini</h3>
+                    <span>March 4, 2025</span>
                   </section>
                 </div>
                 <div className="testimony-ratings">
@@ -124,19 +128,21 @@ function Testimony() {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Egestas amet malesuada
-                nisi nunc eleifend. Tempor in consequat sapien imperdiet diam.
-                Rhoncus convallis imperdiet diam vitae aliquam sagittis vel.
-                Enim porttitor id vel consectetur felis sed.
+                The staff at Ameya homestay were relly helpful and
+                understanding. They would cater to your needs. The room was
+                really good in terms of size and location. The owner understood
+                our challenges as we were travelling with a toddler so they
+                allocated a room which could cater to my needs. It was fantastic
+                experience overall.
               </p>
             </div>
             <div className="testimony-set">
               <div className="testimony-set-heading">
                 <div className="testimony-info">
-                  <img src={KritiPrakash} alt="Kriti Prakash" />
+                  <img src={Sutonuka} alt="Sutonuka" />
                   <section>
-                    <h3>Kriti Prakash</h3>
-                    <span>Mon, 10 Dec 2024</span>
+                    <h3>Sutonuka</h3>
+                    <span>March 20, 2025</span>
                   </section>
                 </div>
                 <div className="testimony-ratings">
@@ -148,19 +154,19 @@ function Testimony() {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Egestas amet malesuada
-                nisi nunc eleifend. Tempor in consequat sapien imperdiet diam.
-                Rhoncus convallis imperdiet diam vitae aliquam sagittis vel.
-                Enim porttitor id vel consectetur felis sed.
+                The property is located very close to all the restaurant and
+                market yet it is secluded surrounded by thick forest making it a
+                very peaceful place to stay. It was very clean and well
+                maintained with helpful staff.
               </p>
             </div>
             <div className="testimony-set">
               <div className="testimony-set-heading">
                 <div className="testimony-info">
-                  <img src={AnandMahajan} alt="Anand Mahajan" />
+                  <img src={Kumarsudip} alt="Kumarsudip" />
                   <section>
-                    <h3>Anand Mahajan</h3>
-                    <span>Sun, 12 Jan 2025</span>
+                    <h3>Kumarsudip</h3>
+                    <span>March 23, 2025</span>
                   </section>
                 </div>
                 <div className="testimony-ratings">
@@ -172,19 +178,18 @@ function Testimony() {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Egestas amet malesuada
-                nisi nunc eleifend. Tempor in consequat sapien imperdiet diam.
-                Rhoncus convallis imperdiet diam vitae aliquam sagittis vel.
-                Enim porttitor id vel consectetur felis sed.
+                Home like atmosphere,very neat and clean,good staff incl.cook,
+                centrally located yet within nature, quite big rooms and toilets
+                & balcony attached.
               </p>
             </div>
             <div className="testimony-set">
               <div className="testimony-set-heading">
                 <div className="testimony-info">
-                  <img src={KritiPrakash} alt="Kriti Prakash" />
+                  <img src={Karthikeyan} alt="Karthikeyan" />
                   <section>
-                    <h3>Kriti Prakash</h3>
-                    <span>Mon, 10 Dec 2024</span>
+                    <h3>Karthikeyan</h3>
+                    <span>March 31, 2025</span>
                   </section>
                 </div>
                 <div className="testimony-ratings">
@@ -196,56 +201,8 @@ function Testimony() {
                 </div>
               </div>
               <p>
-                Lorem ipsum dolor sit amet consectetur. Egestas amet malesuada
-                nisi nunc eleifend. Tempor in consequat sapien imperdiet diam.
-                Rhoncus convallis imperdiet diam vitae aliquam sagittis vel.
-                Enim porttitor id vel consectetur felis sed.
-              </p>
-            </div>
-            <div className="testimony-set">
-              <div className="testimony-set-heading">
-                <div className="testimony-info">
-                  <img src={AnandMahajan} alt="Anand Mahajan" />
-                  <section>
-                    <h3>Anand Mahajan</h3>
-                    <span>Sun, 12 Jan 2025</span>
-                  </section>
-                </div>
-                <div className="testimony-ratings">
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Egestas amet malesuada
-                nisi nunc eleifend. Tempor in consequat sapien imperdiet diam.
-                Rhoncus convallis imperdiet diam vitae aliquam sagittis vel.
-                Enim porttitor id vel consectetur felis sed.
-              </p>
-            </div>
-            <div className="testimony-set">
-              <div className="testimony-set-heading">
-                <div className="testimony-info">
-                  <img src={KritiPrakash} alt="Kriti Prakash" />
-                  <section>
-                    <h3>Kriti Prakash</h3>
-                    <span>Mon, 10 Dec 2024</span>
-                  </section>
-                </div>
-                <div className="testimony-ratings">
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                  <img src={Star} />
-                </div>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur. Egestas amet malesuada
-                nisi nunc eleifend. Tempor in consequat sapien imperdiet diam.
+                Good stay, clean and cooperative & friendly staff. It was a
+                pleasant stay.
               </p>
             </div>
           </div>

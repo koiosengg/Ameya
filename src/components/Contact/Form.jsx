@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import FamilyAndFriends from "../../assets/Contact/Form/Family And Friends.jpg";
 import SoloTravelers from "../../assets/Contact/Form/Solo Travelers.jpg";
 import SmallerGroups from "../../assets/Contact/Form/Smaller Groups.jpg";
@@ -6,7 +7,10 @@ import LargerGroups from "../../assets/Contact/Form/Larger Groups.jpg";
 
 function Form() {
   return (
-    <div className="section-template">
+    <div
+      className="section-template"
+      style={{ position: "relative", zIndex: "5" }}
+    >
       <div className="section-template-heading">
         <h2>Share Your Details to Book</h2>
         <p>
@@ -16,7 +20,11 @@ function Form() {
         </p>
       </div>
       <div className="contact-form-container">
-        <form className="contact-form">
+        <form
+          action="https://formspree.io/f/mdkdgeja"
+          method="POST"
+          className="contact-form"
+        >
           <div className="contact-form-inputs">
             <section>
               <label htmlFor="fullName">Full name</label>
@@ -107,7 +115,11 @@ function Form() {
           </button>
         </form>
         <div className="contact-form-imgs">
-          <div className="gallery-set" style={{ gridArea: "box-1" }}>
+          <Link
+            to="/accomodations/family-and-friends"
+            className="gallery-set"
+            style={{ gridArea: "box-1" }}
+          >
             <img
               src={FamilyAndFriends}
               className="Ameya Coorg Homestay Family & Friends Room"
@@ -116,8 +128,12 @@ function Form() {
               <h3>Family & Friends</h3>
               <p>3-5 people</p>
             </section>
-          </div>
-          <div className="gallery-set" style={{ gridArea: "box-2" }}>
+          </Link>
+          <Link
+            to="/accomodations/solo-travelers"
+            className="gallery-set"
+            style={{ gridArea: "box-2" }}
+          >
             <img
               src={SoloTravelers}
               className="Ameya Coorg Homestay Solo Travelers Room"
@@ -126,8 +142,12 @@ function Form() {
               <h3>Solo Travelers</h3>
               <p>2-3 people</p>
             </section>
-          </div>
-          <div className="gallery-set" style={{ gridArea: "box-3" }}>
+          </Link>
+          <Link
+            to="/accomodations/smaller-groups"
+            className="gallery-set"
+            style={{ gridArea: "box-3" }}
+          >
             <img
               src={SmallerGroups}
               className="Ameya Coorg Homestay Smaller Groups Room"
@@ -136,8 +156,12 @@ function Form() {
               <h3>Smaller Groups</h3>
               <p>6-10 people</p>
             </section>
-          </div>
-          <div className="gallery-set" style={{ gridArea: "box-4" }}>
+          </Link>
+          <Link
+            to="/accomodations/larger-groups"
+            className="gallery-set"
+            style={{ gridArea: "box-4" }}
+          >
             <img
               src={LargerGroups}
               className="Ameya Coorg Homestay Larger Groups Room"
@@ -146,7 +170,7 @@ function Form() {
               <h3>Larger Groups</h3>
               <p>Group of 30 people</p>
             </section>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

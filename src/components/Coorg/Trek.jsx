@@ -156,7 +156,10 @@ const TrekSet = ({
 
 export default function Trek() {
   return (
-    <div className="section-template">
+    <div
+      className="section-template"
+      style={{ position: "relative", zIndex: "5" }}
+    >
       <div className="section-template-heading">
         <h2>Coorg Trekking Adventures</h2>
         <p>
