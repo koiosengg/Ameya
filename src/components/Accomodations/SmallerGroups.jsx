@@ -10,6 +10,7 @@ import KritiPrakash from "../../assets/Testimony/Kriti Prakash.png";
 import Star from "../../assets/Testimony/Star.svg";
 import Reach from "../Reach";
 import CoorgGallery from "../Coorg/Gallery";
+import OtherRooms from "./OtherRooms";
 
 const AboutInfo = ({ info }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -637,6 +638,7 @@ function SmallerGroups() {
         </div>
       </div>
       <Reach />
+      <OtherRooms otherRoom="smaller-groups" />
       <CoorgGallery overlay={true} />
     </>
   );

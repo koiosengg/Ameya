@@ -12,6 +12,7 @@ import Cafe from "./Home/Cafe";
 import Relax from "./Relax";
 import Blog from "./Home/Blog";
 import FAQ from "./FAQ";
+import Help from "./Home/Help";
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
       <Cafe />
       <Relax />
       <Blog />
+      <Help />
       <FAQ />
     </>
   );

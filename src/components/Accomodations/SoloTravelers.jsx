@@ -9,6 +9,7 @@ import AnandMahajan from "../../assets/Testimony/Anand Mahajan.png";
 import KritiPrakash from "../../assets/Testimony/Kriti Prakash.png";
 import Star from "../../assets/Testimony/Star.svg";
 import Reach from "../Reach";
+import OtherRooms from "./OtherRooms";
 import CoorgGallery from "../Coorg/Gallery";
 
 const AboutInfo = ({ info }) => {
@@ -637,6 +638,7 @@ function SoloTravelers() {
         </div>
       </div>
       <Reach />
+      <OtherRooms otherRoom="solo-travelers" />
       <CoorgGallery overlay={true} />
     </>
   );

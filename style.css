@@ -1948,6 +1948,85 @@ header nav .active-navbar-link:hover {
   min-height: auto;
 }
 
+.room-details-other-rooms {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.room-details-other-rooms-set {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.room-details-other-rooms-set img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.room-details-other-rooms-set-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.room-details-other-rooms-set-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.room-details-other-rooms-set-text h3 {
+  color: var(--Text-Black-Primary, #121212);
+  font-family: Manrope;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.48px;
+}
+
+.room-details-other-rooms-set-text section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.room-details-other-rooms-set-text h4 {
+  color: #000;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+.room-details-other-rooms-set-text p {
+  color: var(--Text-Black-text-black-300, #606060);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
 /* Room Details Gallery*/
 
 .room-details-gallery {
@@ -3541,6 +3620,35 @@ footer {
   .room-details .testimony-controls:last-child {
     left: 50%;
     transform: translateX(calc(-50% + 20px));
+  }
+
+  .room-details-other-rooms {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .room-details-other-rooms::-webkit-scrollbar {
+    display: none;
+  }
+
+  .room-details-other-rooms-set {
+    width: 80%;
+  }
+
+  .room-details-other-rooms-set-info {
+    gap: 8px;
+  }
+
+  .room-details-other-rooms-set-text h3 {
+    font-size: 20px;
+  }
+
+  .room-details-other-rooms-set-text h4 {
+    font-size: 16px;
   }
 
   .room-details-gallery {
