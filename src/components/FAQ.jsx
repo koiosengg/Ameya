@@ -5,24 +5,46 @@ function FAQ() {
 
   const faqData = [
     {
-      question: "Is smoking allowed?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
+      question: "Do they serve breakfast?",
+      answer: "There are breakfast options available.",
     },
     {
-      question: "Can I bring extra guests?",
+      question: "Can I park there?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
+        "Free private parking is available on site (reservation is not needed).",
     },
     {
-      question: "What is your cancellation policy?",
+      question: "Is there an airport shuttle service?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
+        "Ameya Coorg Home Stay has an airport shuttle service for an additional fee. You can request it directly after booking your stay.",
     },
     {
-      question: "Do you offer adventure activities?",
+      question: "Is there a restaurant?",
+      answer: "Unfortunately, there's no restaurant at Ameya Coorg Home Stay.",
+    },
+    {
+      question: "Are there rooms with a private bathroom?",
       answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
+        "There are still rooms available with a private bathroom. For example: Deluxe Double or Twin Room with Balcony",
+    },
+    {
+      question: "What are the check-in and check-out times?",
+      answer:
+        "✓ Check-in from 11:00 to 00:00 ✓ Check-out until 10:30, If you'd like to request an early or late check-in or check-out, you can make a special request when you book. Note: Special requests can't be guaranteed. If early or late check-in or check-out is essential to your travel plans, check the cancellation options before booking.",
+    },
+    {
+      question: "Is there a swimming pool?",
+      answer: "Ameya Coorg Home Stay doesn't have a swimming pool.",
+    },
+    {
+      question: "Are there rooms with a balcony?",
+      answer:
+        "There are still rooms available with a balcony. For example: Deluxe Double or Twin Room with Balcony",
+    },
+    {
+      question: "Is there a spa?",
+      answer:
+        "Unfortunately, there's no spa or wellness center at Ameya Coorg Home Stay.",
     },
   ];
 

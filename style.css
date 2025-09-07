@@ -1336,11 +1336,13 @@ header nav .active-navbar-link:hover {
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s;
+  opacity: 0;
 }
 
 .active-faq .faq-set-answer {
   max-height: 500px;
   padding-top: 16px;
+  opacity: 1;
 }
 
 .faq-set-answer p {
