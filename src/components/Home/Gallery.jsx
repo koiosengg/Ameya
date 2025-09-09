@@ -13,9 +13,9 @@ function Gallery() {
       <div className="section-template-heading">
         <h2>A Homestay That Has It All</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
-          <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          Take a peek inside, from cozy rooms, inviting kitchens, to every
+          little detail made for comfort. <br className="desktop" />
+          Spaces that feel like home.
         </p>
       </div>
       <div className="home-gallery">

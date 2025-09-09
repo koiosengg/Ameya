@@ -9,9 +9,9 @@ function Amenities() {
           for a Perfect Stay
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
-          <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          From cozy comforts to thoughtful touches, here’s a glimpse of what
+          awaits you. <br className="desktop" /> These are just a few
+          highlights, there’s plenty more to discover.
         </p>
       </div>
       <div className="home-amenities">
@@ -46,8 +46,8 @@ function Amenities() {
             <h3>Free Wifi and Entertainment</h3>
             <div className="home-amenities-set-line"></div>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Urna lorem semper in
-              varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit
+              Stay connected with free in-room WiFi and binge your favorites on
+              flat-screen TV.
             </p>
           </section>
         </div>
@@ -68,8 +68,8 @@ function Amenities() {
             <h3>Food & Kitchen</h3>
             <div className="home-amenities-set-line"></div>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Urna lorem semper in
-              varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit
+              Fuel up with coffee, kid-friendly meals, breakfast in bed, or
+              handy packed lunches.
             </p>
           </section>
         </div>
@@ -90,8 +90,8 @@ function Amenities() {
             <h3>Housekeeping</h3>
             <div className="home-amenities-set-line"></div>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Urna lorem semper in
-              varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit
+              Daily housekeeping keeps your rooms fresh & fuss-free with crisp
+              sheets, clean rooms, and cozy care.
             </p>
           </section>
         </div>
@@ -114,8 +114,8 @@ function Amenities() {
             <h3>Outdoor & Recreation</h3>
             <div className="home-amenities-set-line"></div>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Urna lorem semper in
-              varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit
+              Unwind in curated gardens, bask on serene terraces, and indulge in
+              cycling through tranquil open-air escapes.
             </p>
           </section>
         </div>
@@ -136,8 +136,8 @@ function Amenities() {
             <h3>Parking & Transport</h3>
             <div className="home-amenities-set-line"></div>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Urna lorem semper in
-              varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit
+              Free private parking takes the hassle out of travel. Airport
+              shuttles keep your journey smooth.
             </p>
           </section>
         </div>
@@ -155,11 +155,12 @@ function Amenities() {
             />
           </svg>
           <section>
-            <h3>Pet Friendly</h3>
+            <h3>Reception & Services</h3>
             <div className="home-amenities-set-line"></div>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Urna lorem semper in
-              varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit
+              Enjoy 24/7 support with private check-ins, concierge care, luggage
+              storage, express services, and local tour tips. Seamless Stay,
+              always welcoming.
             </p>
           </section>
         </div>

@@ -9,9 +9,9 @@ function Cafe() {
       <div className="section-template-heading">
         <h2>A Cafe with Comfort Perks</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
+          Our on-site café serves fresh brews, bites, and cozy vibes.
           <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          Perfect for relaxing or catching up.
         </p>
       </div>
       <div className="home-cafe">

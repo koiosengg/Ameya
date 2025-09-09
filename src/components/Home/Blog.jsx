@@ -44,9 +44,8 @@ function Blog() {
           inspire your next stay.
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
-          <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          Dive into travel tales, insider tips, and guest experiences{" "}
+          <br className="desktop" /> to plan your perfect Coorg escape with us.
         </p>
       </div>
       <div className="home-blog">

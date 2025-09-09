@@ -54,9 +54,8 @@ function Testimony() {
           Moments Cherished
         </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
-          <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          Hear what fellow travelers loved most about their stay with us.{" "}
+          <br className="desktop" /> Real experiences, Real smiles.
         </p>
       </div>
 

@@ -4,11 +4,11 @@ function Reach() {
   return (
     <div className="section-template">
       <div className="section-template-heading">
-        <h2>How to Reach</h2>
+        <h2>Find Your Way to Us</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
+          See what’s around and find us easily, We will be waiting!{" "}
           <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          Check the map and explore nearby attractions.
         </p>
       </div>
       <div className="reach">

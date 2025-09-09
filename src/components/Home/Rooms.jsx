@@ -30,8 +30,9 @@ function Rooms() {
       <div className="home-rooms-heading">
         <h2>Rooms & Retreats</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
-          Lectus egestas nunc facilisis id.
+          Pick your vibe: Whether its just you and your partner or your friends
+          or your entire family, We have something for everyone from Cozy suites
+          to chill rooms with dreamy views.
         </p>
       </div>
       <div className="home-rooms-container">
