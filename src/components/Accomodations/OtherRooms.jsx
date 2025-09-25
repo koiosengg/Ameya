@@ -6,7 +6,7 @@ function OtherRooms({ otherRoom }) {
   return (
     <div className="section-template">
       <div className="section-template-heading">
-        <h2>A Cafe with Comfort Perks</h2>
+        <h2>Perfect Matches Just for You!</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
           <br className="desktop" />

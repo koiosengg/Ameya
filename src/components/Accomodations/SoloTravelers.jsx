@@ -5,12 +5,11 @@ import BedroomsImg1 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bed
 import BalconyImg1 from "../../assets/Accomodations/Solo Travelers/Balcony/Balcony Img 1.jpg";
 import BalconyImg2 from "../../assets/Accomodations/Solo Travelers/Balcony/Balcony Img 2.jpg";
 import BedroomsImg2 from "../../assets/Accomodations/Solo Travelers/Bedrooms/Bedrooms Img 2.jpg";
-import AnandMahajan from "../../assets/Testimony/Anand Mahajan.png";
-import KritiPrakash from "../../assets/Testimony/Kriti Prakash.png";
-import Star from "../../assets/Testimony/Star.svg";
+import Testimony from "./Testimony";
 import Reach from "../Reach";
 import OtherRooms from "./OtherRooms";
 import CoorgGallery from "../Coorg/Gallery";
+import FAQ from "./FAQ";
 
 const AboutInfo = ({ info }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -36,71 +35,8 @@ const AboutInfo = ({ info }) => {
 };
 
 function SoloTravelers() {
+  const [readMore, setReadMore] = useState(false);
   const [activeOption, setActiveOption] = useState(true);
-  const [activeIndexFAQ, setActiveIndexFAQ] = useState(null);
-
-  const faqData = [
-    {
-      question: "Can I park my car in home stay?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
-    },
-    {
-      question: "Can I park my car in home stay?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
-    },
-    {
-      question: "Can I park my car in home stay?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
-    },
-    {
-      question: "Can I park my car in home stay?",
-      answer:
-        "Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius. Lectus egestas nunc facilisis id lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur. Urna lorem semper invarius. Lectus egestas nunc facilisis id lorem ipsum dolor sit",
-    },
-  ];
-
-  const toggleFAQ = (index) => {
-    setActiveIndexFAQ((prev) => (prev === index ? null : index));
-  };
-
-  const containerRef = useRef(null);
-  const slideRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [totalGroups, setTotalGroups] = useState(0);
-  const [containerWidth, setContainerWidth] = useState(0);
-
-  useEffect(() => {
-    const updateValues = () => {
-      const sets = slideRef.current?.children.length || 0;
-      const isMobile = window.innerWidth < 1200;
-
-      const perGroup = isMobile ? 1 : 2;
-
-      setTotalGroups(Math.ceil(sets / perGroup));
-      setContainerWidth(containerRef.current?.offsetWidth || 0);
-    };
-
-    updateValues();
-    window.addEventListener("resize", updateValues);
-    return () => window.removeEventListener("resize", updateValues);
-  }, []);
-
-  const handleLeftClick = () => {
-    if (activeIndex > 0) {
-      setActiveIndex((prev) => prev - 1);
-    }
-  };
-
-  const handleRightClick = () => {
-    if (activeIndex < totalGroups - 1) {
-      setActiveIndex((prev) => prev + 1);
-    }
-  };
-
-  const translateX = -(activeIndex * (containerWidth + 20));
 
   return (
     <>
@@ -297,15 +233,28 @@ function SoloTravelers() {
           </div>
           <div className="room-details-hero-about">
             <h2>About the Room</h2>
-            <AboutInfo
-              info=" Lorem ipsum dolor sit amet consectetur. Ultricies sed
-                ullamcorper dictum in consequat viverra diam. Sed duis faucibus
-                consectetur enim nunc amet. Mattis cursus ultrices sit eu lacus
-                velit. Nulla eros felis faucibus dis fringilla fringilla purus
-                tristique imperdiet.Ultricies sed ullamcorper dictum in consequat viverra diam. Sed duis faucibus
-                consectetur enim nunc amet. Mattis cursus ultrices sit eu lacus
-                velit. "
-            />
+            <div className="room-details-hero-about-text-container">
+              <p className="room-details-hero-about-text">
+                <strong>Comfortable Accommodations:</strong> Ameya Coorg Home
+                Stay in Madikeri offers family rooms with private bathrooms,
+                balconies, and garden views. Each room includes a work desk,
+                free toiletries, and a TV.
+              </p>
+              {readMore && (
+                <p className="room-details-hero-about-text">
+                  <strong>Exceptional Facilities:</strong> Guests enjoy a sun
+                  terrace, garden, and free WiFi. Additional amenities include a
+                  lounge, coffee shop, outdoor seating area, and picnic spots.
+                  Free bicycles are available for exploring the surroundings.
+                </p>
+              )}
+              <Link
+                className="tertiary-btn"
+                onClick={() => setReadMore(!readMore)}
+              >
+                <p>{readMore ? "See less" : "Read more"}</p>
+              </Link>
+            </div>
           </div>
           <div className="room-details-hero-about">
             <h2>Popular Facilities</h2>
@@ -330,299 +279,9 @@ function SoloTravelers() {
           </div>
           <div className="room-details-hero-about">
             <h2>What Guests Ask?</h2>
-            <div className="faq">
-              {faqData.map((faq, index) => (
-                <React.Fragment key={index}>
-                  <div
-                    className={`faq-set ${
-                      activeIndexFAQ === index ? "active-faq" : ""
-                    }`}
-                    onClick={() => toggleFAQ(index)}
-                  >
-                    <div className="faq-set-heading">
-                      <h3>
-                        {index + 1}. {faq.question}
-                      </h3>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <mask
-                          id="mask0_800_1761"
-                          style={{ maskType: "alpha" }}
-                          maskUnits="userSpaceOnUse"
-                          x="0"
-                          y="0"
-                          width="24"
-                          height="24"
-                        >
-                          <rect
-                            width="24"
-                            height="24"
-                            transform="matrix(0 -1 -1 0 24 24)"
-                            fill="#D9D9D9"
-                          />
-                        </mask>
-                        <g mask="url(#mask0_800_1761)">
-                          <path
-                            d="M2 8L12 18L22 8L20.225 6.225L12 14.45L3.775 6.225L2 8Z"
-                            fill="#C2C2C2"
-                          />
-                        </g>
-                      </svg>
-                    </div>
-                    <div className="faq-set-answer">
-                      <p>{faq.answer}</p>
-                    </div>
-                  </div>
-                  <div className="faq-line"></div>
-                </React.Fragment>
-              ))}
-            </div>
+            <FAQ />
           </div>
-          <div className="room-details-hero-about">
-            <h2>Reviews</h2>
-            <div className="testimony">
-              <div
-                className="testimony-controls"
-                onClick={handleLeftClick}
-                style={{
-                  opacity: activeIndex === 0 ? 0.3 : 1,
-                  pointerEvents: activeIndex === 0 ? "none" : "auto",
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <mask
-                    id="mask0_117_4419"
-                    style={{ maskType: "alpha" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="24"
-                    height="24"
-                  >
-                    <rect
-                      width="24"
-                      height="24"
-                      transform="matrix(-1 0 0 1 24 0)"
-                      fill="#D9D9D9"
-                    />
-                  </mask>
-                  <g mask="url(#mask0_117_4419)">
-                    <path
-                      d="M7.825 13H20V11H7.825L13.425 5.4L12 4L4 12L12 20L13.425 18.6L7.825 13Z"
-                      fill="#1C1B1F"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="testimony-container" ref={containerRef}>
-                <div
-                  className="testimony-slide"
-                  ref={slideRef}
-                  style={{
-                    transform: `translateX(${translateX}px)`,
-                    transition: "transform 0.5s ease",
-                  }}
-                >
-                  <div className="testimony-set">
-                    <div className="testimony-set-heading">
-                      <div className="testimony-info">
-                        <img src={AnandMahajan} alt="Anand Mahajan" />
-                        <section>
-                          <h3>Anand Mahajan</h3>
-                          <span>Sun, 12 Jan 2025</span>
-                        </section>
-                      </div>
-                      <div className="testimony-ratings">
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                      </div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Egestas amet
-                      malesuada nisi nunc eleifend. Tempor in consequat sapien
-                      imperdiet diam. Rhoncus convallis imperdiet diam vitae
-                      aliquam sagittis vel. Enim porttitor id vel consectetur
-                      felis sed.
-                    </p>
-                  </div>
-                  <div className="testimony-set">
-                    <div className="testimony-set-heading">
-                      <div className="testimony-info">
-                        <img src={KritiPrakash} alt="Kriti Prakash" />
-                        <section>
-                          <h3>Kriti Prakash</h3>
-                          <span>Mon, 10 Dec 2024</span>
-                        </section>
-                      </div>
-                      <div className="testimony-ratings">
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                      </div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Egestas amet
-                      malesuada nisi nunc eleifend. Tempor in consequat sapien
-                      imperdiet diam. Rhoncus convallis imperdiet diam vitae
-                      aliquam sagittis vel. Enim porttitor id vel consectetur
-                      felis sed.
-                    </p>
-                  </div>
-                  <div className="testimony-set">
-                    <div className="testimony-set-heading">
-                      <div className="testimony-info">
-                        <img src={AnandMahajan} alt="Anand Mahajan" />
-                        <section>
-                          <h3>Anand Mahajan</h3>
-                          <span>Sun, 12 Jan 2025</span>
-                        </section>
-                      </div>
-                      <div className="testimony-ratings">
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                      </div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Egestas amet
-                      malesuada nisi nunc eleifend. Tempor in consequat sapien
-                      imperdiet diam. Rhoncus convallis imperdiet diam vitae
-                      aliquam sagittis vel. Enim porttitor id vel consectetur
-                      felis sed.
-                    </p>
-                  </div>
-                  <div className="testimony-set">
-                    <div className="testimony-set-heading">
-                      <div className="testimony-info">
-                        <img src={KritiPrakash} alt="Kriti Prakash" />
-                        <section>
-                          <h3>Kriti Prakash</h3>
-                          <span>Mon, 10 Dec 2024</span>
-                        </section>
-                      </div>
-                      <div className="testimony-ratings">
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                      </div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Egestas amet
-                      malesuada nisi nunc eleifend. Tempor in consequat sapien
-                      imperdiet diam. Rhoncus convallis imperdiet diam vitae
-                      aliquam sagittis vel. Enim porttitor id vel consectetur
-                      felis sed.
-                    </p>
-                  </div>
-                  <div className="testimony-set">
-                    <div className="testimony-set-heading">
-                      <div className="testimony-info">
-                        <img src={AnandMahajan} alt="Anand Mahajan" />
-                        <section>
-                          <h3>Anand Mahajan</h3>
-                          <span>Sun, 12 Jan 2025</span>
-                        </section>
-                      </div>
-                      <div className="testimony-ratings">
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                      </div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Egestas amet
-                      malesuada nisi nunc eleifend. Tempor in consequat sapien
-                      imperdiet diam. Rhoncus convallis imperdiet diam vitae
-                      aliquam sagittis vel. Enim porttitor id vel consectetur
-                      felis sed.
-                    </p>
-                  </div>
-                  <div className="testimony-set">
-                    <div className="testimony-set-heading">
-                      <div className="testimony-info">
-                        <img src={KritiPrakash} alt="Kriti Prakash" />
-                        <section>
-                          <h3>Kriti Prakash</h3>
-                          <span>Mon, 10 Dec 2024</span>
-                        </section>
-                      </div>
-                      <div className="testimony-ratings">
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                        <img src={Star} />
-                      </div>
-                    </div>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur. Egestas amet
-                      malesuada nisi nunc eleifend. Tempor in consequat sapien
-                      imperdiet diam. Rhoncus convallis imperdiet diam vitae
-                      aliquam sagittis vel. Enim porttitor id vel consectetur
-                      felis sed.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                className="testimony-controls"
-                onClick={handleRightClick}
-                style={{
-                  opacity: activeIndex === totalGroups - 1 ? 0.3 : 1,
-                  pointerEvents:
-                    activeIndex === totalGroups - 1 ? "none" : "auto",
-                }}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                >
-                  <mask
-                    id="mask0_117_4415"
-                    style={{ maskType: "alpha" }}
-                    maskUnits="userSpaceOnUse"
-                    x="0"
-                    y="0"
-                    width="24"
-                    height="24"
-                  >
-                    <rect width="24" height="24" fill="#D9D9D9" />
-                  </mask>
-                  <g mask="url(#mask0_117_4415)">
-                    <path
-                      d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z"
-                      fill="#1C1B1F"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </div>
-          </div>
+          <Testimony />
           <div className="room-details-hero-about">
             <h2>Cancellation Policy</h2>
             <AboutInfo

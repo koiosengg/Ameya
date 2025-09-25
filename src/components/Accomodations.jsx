@@ -190,7 +190,7 @@ function Accomodations() {
 
       {activeTab === "FamilyAndFriends" && (
         <AccomodationsSet
-          NoOfguests=" Rooms for 4-5 People"
+          NoOfguests=" Rooms for 3-5 People"
           images={[FamilyAndFriends1, FamilyAndFriends2, FamilyAndFriends3]}
           title="Family Suite / Triple / Quad Room"
           NoOfBeds="Multiple beds (queen + single beds)"
@@ -201,7 +201,7 @@ function Accomodations() {
 
       {activeTab === "SmallerGroups" && (
         <AccomodationsSet
-          NoOfguests=" Rooms for 5-10 People"
+          NoOfguests=" Rooms for 4-6 People"
           images={[SmallerGroups3, SmallerGroups2, SmallerGroups1]}
           title="Large Family Room, multiple rooms"
           NoOfBeds="Multiple beds (bunk beds or separate single beds)"
@@ -212,7 +212,7 @@ function Accomodations() {
 
       {activeTab === "LargerGroups" && (
         <AccomodationsSet
-          NoOfguests=" Rooms for 10-25 People"
+          NoOfguests=" Rooms for 8-10 People"
           images={[LargerGroups1, LargerGroups2, LargerGroups3]}
           title="Private Entrance, Multiple Rooms, Common Hall, dining space"
           NoOfBeds="Multiple interconnected rooms (e.g., 4 rooms with 3 to 5 beds each)"

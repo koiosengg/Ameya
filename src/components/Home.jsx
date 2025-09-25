@@ -28,7 +28,7 @@ function Home() {
       <Coorg />
       <Cafe />
       <Relax />
-      <Blog />
+      {/* <Blog /> */}
       <Help />
       <FAQ />
     </>

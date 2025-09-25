@@ -30,7 +30,7 @@ function Cafe() {
         <div className="gallery-set" style={{ gridArea: "box-3" }}>
           <img src={CafeteriaImg3} className="Ameya Coory Homestay Cafeteria" />
           <section>
-            <h3>Cafeteria</h3>
+            <h3> Seating area</h3>
           </section>
         </div>
       </div>

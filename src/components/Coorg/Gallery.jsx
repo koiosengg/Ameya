@@ -16,9 +16,9 @@ function Gallery({ overlay }) {
       <div className="section-template-heading">
         <h2>Discover the Soul of Coorg</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
-          <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          From misty hills to lush coffee plantations, discover must-visit spots
+          and hidden gems nearby. <br className="desktop" /> Discover the hype
+          with peace fo mind.
         </p>
       </div>
       <div className="coorg-gallery">

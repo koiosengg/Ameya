@@ -1,56 +1,27 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function FAQ() {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const faqData = [
-    {
-      question: "Do they serve breakfast?",
-      answer: "There are breakfast options available.",
-    },
-    {
-      question: "Can I park there?",
-      answer:
-        "Free private parking is available on site (reservation is not needed).",
-    },
-    {
-      question: "Is there an airport shuttle service?",
-      answer:
-        "Ameya Coorg Home Stay has an airport shuttle service for an additional fee. You can request it directly after booking your stay.",
-    },
-    {
-      question: "Is there a restaurant?",
-      answer: "Unfortunately, there's no restaurant at Ameya Coorg Home Stay.",
-    },
-    {
-      question: "Are there rooms with a private bathroom?",
-      answer:
-        "There are still rooms available with a private bathroom. For example: Deluxe Double or Twin Room with Balcony",
-    },
-    {
-      question: "What are the check-in and check-out times?",
-      answer:
-        "✓ Check-in from 11:00 to 00:00 ✓ Check-out until 10:30, If you'd like to request an early or late check-in or check-out, you can make a special request when you book. Note: Special requests can't be guaranteed. If early or late check-in or check-out is essential to your travel plans, check the cancellation options before booking.",
-    },
-    {
-      question: "Is there a swimming pool?",
-      answer: "Ameya Coorg Home Stay doesn't have a swimming pool.",
-    },
-    {
-      question: "Are there rooms with a balcony?",
-      answer:
-        "There are still rooms available with a balcony. For example: Deluxe Double or Twin Room with Balcony",
-    },
-    {
-      question: "Is there a spa?",
-      answer:
-        "Unfortunately, there's no spa or wellness center at Ameya Coorg Home Stay.",
-    },
+    { question: "Do they serve breakfast?", answer: "There are breakfast options available." },
+    { question: "Can I park there?", answer: "Free private parking is available on site (reservation is not needed)." },
+    { question: "Is there an airport shuttle service?", answer: "Ameya Coorg Home Stay has an airport shuttle service for an additional fee. You can request it directly after booking your stay." },
+    { question: "Is there a restaurant?", answer: "Unfortunately, there's no restaurant at Ameya Coorg Home Stay." },
+    { question: "Are there rooms with a private bathroom?", answer: "There are still rooms available with a private bathroom. For example: Deluxe Double or Twin Room with Balcony" },
+    { question: "What are the check-in and check-out times?", answer: "✓ Check-in from 11:00 to 00:00 ✓ Check-out until 10:30, If you'd like to request an early or late check-in or check-out, you can make a special request when you book. Note: Special requests can't be guaranteed. If early or late check-in or check-out is essential to your travel plans, check the cancellation options before booking." },
+    { question: "Is there a swimming pool?", answer: "Ameya Coorg Home Stay doesn't have a swimming pool." },
+    { question: "Are there rooms with a balcony?", answer: "There are still rooms available with a balcony. For example: Deluxe Double or Twin Room with Balcony" },
+    { question: "Is there a spa?", answer: "Unfortunately, there's no spa or wellness center at Ameya Coorg Home Stay." },
   ];
 
   const toggleFAQ = (index) => {
     setActiveIndex((prev) => (prev === index ? null : index));
   };
+
+  const displayedFaqs = isExpanded ? faqData : faqData.slice(0, 5);
 
   return (
     <div className="section-template">
@@ -66,7 +37,7 @@ function FAQ() {
         </p>
       </div>
       <div className="faq">
-        {faqData.map((faq, index) => (
+        {displayedFaqs.map((faq, index) => (
           <React.Fragment key={index}>
             <div
               className={`faq-set ${activeIndex === index ? "active-faq" : ""}`}
@@ -108,6 +79,16 @@ function FAQ() {
             <div className="faq-line"></div>
           </React.Fragment>
         ))}
+
+        {/* Only show link if more than 5 FAQs */}
+        {faqData.length > 5 && (
+          <Link
+            className="tertiary-btn"
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            <p>{isExpanded ? "See less" : "Read more"}</p>
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -61,7 +61,10 @@ function Attractions() {
   return (
     <div className="section-template">
       <div className="section-template-heading">
-        <h2>Coorg Trekking Adventures</h2>
+        <h2>
+          Nearby Attractions from <br className="desktop" />
+          Your Homestay
+        </h2>
         <p>
           Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
           <br className="desktop" />

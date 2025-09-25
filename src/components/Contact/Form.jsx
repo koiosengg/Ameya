@@ -12,11 +12,11 @@ function Form() {
       style={{ position: "relative", zIndex: "5" }}
     >
       <div className="section-template-heading">
-        <h2>Share Your Details to Book</h2>
+        <h2>Book Your Stay in Seconds</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur. Urna lorem semper in varius.
+          Fill out the form to reserve your room at Ameya.
           <br className="desktop" />
-          Lectus egestas nunc facilisis id.
+          And we’ll call you back to confirm your stay in Coorg.
         </p>
       </div>
       <div className="contact-form-container">
@@ -154,7 +154,7 @@ function Form() {
             />
             <section>
               <h3>Smaller Groups</h3>
-              <p>6-10 people</p>
+              <p>4-6 people</p>
             </section>
           </Link>
           <Link
@@ -168,7 +168,7 @@ function Form() {
             />
             <section>
               <h3>Larger Groups</h3>
-              <p>Group of 30 people</p>
+              <p>8 - 10 people</p>
             </section>
           </Link>
         </div>

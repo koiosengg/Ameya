@@ -1908,6 +1908,14 @@ header nav .active-navbar-link:hover {
   align-self: stretch;
 }
 
+.room-details-hero-about-text-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
 .room-details-hero-about-text {
   max-width: 870px;
   color: var(--Text-Black-text-black-300, #606060);
@@ -1917,6 +1925,12 @@ header nav .active-navbar-link:hover {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.36px;
+}
+
+.room-details-hero-about-text strong {
+  color: var(--Text-Black-Primary, #121212);
+
+  font-weight: 600;
 }
 
 .room-details-hero-facilities {
@@ -1940,10 +1954,6 @@ header nav .active-navbar-link:hover {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -0.32px;
-}
-
-.room-details-hero-about .active-faq .faq-set-heading svg path:first-child {
-  opacity: 1;
 }
 
 .room-details-hero-about .testimony {

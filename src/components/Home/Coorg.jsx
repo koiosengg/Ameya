@@ -21,7 +21,7 @@ function Coorg() {
           with peace fo mind.
         </p>
       </div>
-      <Link className="primary-btn">
+      <Link to="/coorg" className="primary-btn">
         <p>Explore Coorg</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"

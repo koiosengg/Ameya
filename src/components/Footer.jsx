@@ -20,9 +20,9 @@ function Footer() {
         <div className="footer-container-line"></div>
         <div className="footer-container-bottom">
           <div className="footer-container-bottom-left">
-            <Link>About</Link>
-            <Link>Accomodation</Link>
-            <Link>Gallery</Link>
+            <Link to="/accomadation">Accomodation</Link>
+            <Link to="/coorg">Coorg</Link>
+            <Link to="/gallery">Gallery</Link>
           </div>
           <div className="footer-container-bottom-center">
             <Link>Privacy</Link>
@@ -31,7 +31,7 @@ function Footer() {
             <div className="footer-container-bottom-center-line"></div>
             <Link>Cookies</Link>
           </div>
-          <a href="#" target="blank">
+          <a href="https://maps.app.goo.gl/iZT65ex7LP6CFEcZ6" target="blank">
             Near Raja’s Seat, Sunset Valley Road,
             <br /> Madikeri, Coorg, Karnataka – 571201
           </a>
@@ -40,9 +40,9 @@ function Footer() {
       <div className="footer-below">
         <p>© 2025 Ameya Homestays. All Rights Reserved.</p>
         <p>
-          Crafted by{" "}
+          With ♡ by{" "}
           <a href="https://www.koiostudio.com/" target="_blank">
-            Koios Studios
+            Koiostudios
           </a>
         </p>
       </div>
