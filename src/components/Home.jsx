@@ -26,7 +26,7 @@ function Home() {
       <Testimony />
       <Reach />
       <Coorg />
-      <Cafe />
+      {/* <Cafe /> */}
       <Relax />
       {/* <Blog /> */}
       <Help />

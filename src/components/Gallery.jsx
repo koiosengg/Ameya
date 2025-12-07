@@ -16,7 +16,7 @@ function Gallery() {
       <Space />
       <CoorgGallery />
       <Banner />
-      <Cafe />
+      {/* <Cafe /> */}
       <HomeGallery />
       <Testimony />
       <Relax />
