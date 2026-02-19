@@ -4,7 +4,6 @@ import LivingRoomImg2 from "../../assets/Gallery/Space/Living Room/Living Room I
 import LivingRoomImg3 from "../../assets/Gallery/Space/Living Room/Living Room Img 3.jpg";
 import LivingRoomImg4 from "../../assets/Gallery/Space/Living Room/Living Room Img 4.jpg";
 import LivingRoomImg5 from "../../assets/Gallery/Space/Living Room/Living Room Img 5.jpg";
-import LivingRoomImg6 from "../../assets/Gallery/Space/Living Room/Living Room Img 6.png";
 import BedroomsImg1 from "../../assets/Gallery/Space/Bedrooms/Bedrooms Img 1.jpg";
 import BedroomsImg2 from "../../assets/Gallery/Space/Bedrooms/Bedrooms Img 2.jpg";
 import BedroomsImg3 from "../../assets/Gallery/Space/Bedrooms/Bedrooms Img 3.jpg";
@@ -16,13 +15,11 @@ import BalconyImg2 from "../../assets/Gallery/Space/Balcony/Balcony Img 2.jpg";
 import BalconyImg3 from "../../assets/Gallery/Space/Balcony/Balcony Img 3.jpg";
 import BalconyImg4 from "../../assets/Gallery/Space/Balcony/Balcony Img 4.jpg";
 import BalconyImg5 from "../../assets/Gallery/Space/Balcony/Balcony Img 5.jpg";
-import BalconyImg6 from "../../assets/Gallery/Space/Balcony/Balcony Img 6.png";
 import BathroomsImg1 from "../../assets/Gallery/Space/Bathrooms/Bathrooms Img 1.jpg";
 import BathroomsImg2 from "../../assets/Gallery/Space/Bathrooms/Bathrooms Img 2.jpg";
 import BathroomsImg3 from "../../assets/Gallery/Space/Bathrooms/Bathrooms Img 3.jpg";
 import BathroomsImg4 from "../../assets/Gallery/Space/Bathrooms/Bathrooms Img 4.jpg";
 import BathroomsImg5 from "../../assets/Gallery/Space/Bathrooms/Bathrooms Img 5.jpg";
-import BathroomsImg6 from "../../assets/Gallery/Space/Bathrooms/Bathrooms Img 6.png";
 
 const Spaceset = ({ title, images }) => {
   return (
@@ -41,7 +38,10 @@ const Spaceset = ({ title, images }) => {
 
 function Space() {
   return (
-    <div className="section-template"  style={{ position: "relative", zIndex: "5" }}>
+    <div
+      className="section-template"
+      style={{ position: "relative", zIndex: "5" }}
+    >
       <div className="section-template-heading">
         <h2>Step Inside Our Spaces</h2>
         <p>
@@ -59,7 +59,6 @@ function Space() {
             LivingRoomImg3,
             LivingRoomImg4,
             LivingRoomImg5,
-            LivingRoomImg6,
           ]}
         />
         <Spaceset
@@ -81,7 +80,6 @@ function Space() {
             BalconyImg3,
             BalconyImg4,
             BalconyImg5,
-            BalconyImg6,
           ]}
         />
         <Spaceset
@@ -92,7 +90,6 @@ function Space() {
             BathroomsImg3,
             BathroomsImg4,
             BathroomsImg5,
-            BathroomsImg6,
           ]}
         />
       </div>
